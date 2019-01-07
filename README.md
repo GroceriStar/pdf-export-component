@@ -4,6 +4,8 @@
 - [ ] Move our stuff like `fetch` and other, that is not necessary in build to devDependencies.
 
 
+- [ ] update our components in a way so we can actually be free from similar files with similar names.
+
 
 
 example how i use list:
@@ -87,12 +89,7 @@ or
 #### Code Example
 
 ```
-const { List } = require('@groceristar/grocery-component')
 
-
-// returns
-
-example
 ```
 
 
@@ -115,15 +112,6 @@ Tasks:
 - [ ] ignore lib folder, so it will be created only when we publish it on npm. we don't need it locally. delete from source, then only ignore, so it wouldn't be at github repo...
 ---
 
-
-
-[npm-run-script](https://docs.npmjs.com/cli/run-script)
-
-[Introduction to NPM Scripts](https://medium.freecodecamp.org/introduction-to-npm-scripts-1dbb2ae01633)
-
-
-
-@TODO add tests
 
 Trello Board:
 
