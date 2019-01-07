@@ -30,7 +30,7 @@
     "eslint": "^5.12.0",
     "jest": "^23.6.0",
     "regenerator-runtime": "^0.13.1",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.3"
   },
   "peerDependencies": {
     "react": "^16.6.3",
