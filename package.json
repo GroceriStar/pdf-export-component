@@ -1,7 +1,7 @@
 {
   "name": "@groceristar/pdf-export",
   "version": "1.0.6",
-  "description": "module to use grocery components between projects",
+  "description": "module to use pdf-export feature between projects",
   "main": "lib/index.js",
   "repository": "https://github.com/GroceriStar/pdf-export-component",
   "author": "Arthur Tkachenko",
@@ -39,8 +39,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
-    "@groceristar/groceristar-fetch": "^1.1.37",
+  "dependencies": {    
     "@react-pdf/renderer": "^1.1.1",
     "uuid": "^3.3.2"
   }
