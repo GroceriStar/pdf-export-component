@@ -1,0 +1,45 @@
+{
+  "name": "@groceristar/pdf-export",
+  "version": "1.0.6",
+  "description": "module to use grocery components between projects",
+  "main": "lib/index.js",
+  "repository": "https://github.com/GroceriStar/pdf-export-component",
+  "author": "Arthur Tkachenko",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "babel src -d lib",
+    "prepare": "yarn clean",
+    "clean": "rimraf ./coverage ./lib",
+    "lint": "eslint src",
+    "zprepublish": "yarn clean && yarn build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cover": "jest --coverage"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.2.3",
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "eslint": "^5.9.0",
+    "jest": "^23.6.0",
+    "regenerator-runtime": "^0.13.1",
+    "rimraf": "^2.6.2"
+  },
+  "peerDependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "uuid": "^3.3.2"
+  }
+}
