@@ -33,13 +33,15 @@
     "rimraf": "^2.6.2"
   },
   "peerDependencies": {
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
   },
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
+    "@groceristar/groceristar-fetch": "^1.1.37",
+    "@react-pdf/renderer": "^1.1.1",
     "uuid": "^3.3.2"
   }
 }
