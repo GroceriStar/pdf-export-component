@@ -71,7 +71,7 @@ const ListsDepartment = ({ department, ingredients }) => (
 
 const RenderLists3 = ({ data }) => {
 
-  const { data } = props;
+  // const { data } = props;
   console.log( data );
   console.log( props );
 
