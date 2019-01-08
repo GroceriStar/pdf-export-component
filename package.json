@@ -39,7 +39,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {    
+  "dependencies": {
+    "@groceristar/groceristar-fetch": "^1.1.37",
     "@react-pdf/renderer": "^1.1.1",
     "uuid": "^3.3.2"
   }
