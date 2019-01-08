@@ -4,7 +4,7 @@ import React from 'react';
 import { Button } from 'antd';
 
 // import DownloadPDFLink from '../DownloadPDFLink/DownloadPDFLink';
-import { DownloadPDFLink1 } from '../index'
+import { DownloadPDFLink1 } from '../../index'
 
 
 class GeneratePDFButton1 extends React.Component {

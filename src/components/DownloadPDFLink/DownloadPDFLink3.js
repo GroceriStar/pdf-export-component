@@ -7,7 +7,7 @@ import {
 import { Button } from 'antd';
 
 
-import { DocumentLayout3, RenderLists3 }  from '../index';
+import { DocumentLayout3, RenderLists3 }  from '../../index';
 
 import styles from './styles'
 

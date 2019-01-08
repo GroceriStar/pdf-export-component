@@ -11,7 +11,7 @@ import {
 import RenderLists3 from '../RenderLists3/RenderLists3';
 
 // const DocumentLayout = ( styles, name ) => (
-import { getFullGrocery } from "../../../selectors/selector";
+import { getFullGrocery } from "../../selectors/selector";
 
   const DocumentLayout3 = ( styles, name ) => (
   <Document>
