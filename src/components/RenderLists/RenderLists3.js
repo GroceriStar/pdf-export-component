@@ -69,29 +69,34 @@ const ListsDepartment = ({ department, ingredients }) => (
 // @TODO this is a bad situation where we have a passing data as it is - we use names, not id at not a main container - component
 // and this will be hardly to catch later
 
-const RenderLists3 = ({ data }) => {
+const RenderLists3 = (props) => {
 
-  // const { data } = props;
+  const { data } = props;
   console.log( data );
-  console.log( props );
+  // console.log( props );
 
   return (
     <View>
+      zzzzzz
+    {/*
       {data && data.map(item => (
         <ListsDepartment
           key={uuidv1()}
           department={item.department}
           ingredients={item.ingredients} />
       ))}
+
+      */}
     </View>
   );
 
 
 }
-ListsDepartment.propTypes = {
-  // name: PropTypes.array, because getting an error expected array but receiving string
-  department: PropTypes.string,
-  ingredients: PropTypes.array,
-};
+
+// ListsDepartment.propTypes = {
+//   // name: PropTypes.array, because getting an error expected array but receiving string
+//   department: PropTypes.string,
+//   ingredients: PropTypes.array,
+// };
 
 export default RenderLists3;

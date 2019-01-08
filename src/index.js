@@ -32,12 +32,15 @@ export {
   DownloadPDFLink1,
   DownloadPDFLink2,
   DownloadPDFLink3,
+
   GeneratePDFButton1,
   GeneratePDFButton2,
   GeneratePDFButton3,
+
   DocumentLayout1,
   DocumentLayout2,
   DocumentLayout3,
+
   RenderLists1,
   RenderLists2,
   RenderLists3
