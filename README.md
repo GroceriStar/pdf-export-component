@@ -1,6 +1,8 @@
 <!--[![npm version](https://badge.fury.io/js/%40groceristar%2Fgrocery-component.svg)](https://badge.fury.io/js/%40groceristar%2Fgrocery-component)
 -->
 
+``` yarn add @groceristar/pdf-export ```
+
 - [ ] Move our stuff like `fetch` and other, that is not necessary in build to devDependencies.
 
 
