@@ -54,8 +54,12 @@ const ListsDepartment = ({ department, ingredients }) => (
 
     {/*}<View style={styles.block} > */}
     <List3>
-      {ingredients.map((ingredient, num) => <Item
-        key={uuidv1()}>{ingredient}</Item>)}
+      {ingredients.map((ingredient, num) =>
+        <Item
+          key={uuidv1()}>
+          {ingredient}
+          </Item>
+        )}
     </List3>
      {/*</View> */}
 
@@ -67,9 +71,10 @@ const ListsDepartment = ({ department, ingredients }) => (
 
 const RenderLists3 = ({ data }) => {
 
-  // const { data } = props;
-  // console.log( data );
-  // console.log( props );
+  const { data } = props;
+  console.log( data );
+  console.log( props );
+
   return (
     <View>
       {data && data.map(item => (
