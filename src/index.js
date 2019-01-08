@@ -8,6 +8,9 @@
 //
 // };
 
+// example for our current case:
+//import DownloadPDFLink1   from '~/DownloadPDFLink/DownloadPDFLink1';
+
 // from showcase
 import DownloadPDFLink1   from './components/DownloadPDFLink/DownloadPDFLink1';
 import DownloadPDFLink2   from './components/DownloadPDFLink/DownloadPDFLink2';
