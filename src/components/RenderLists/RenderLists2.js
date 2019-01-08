@@ -5,7 +5,7 @@ import { Text, View, StyleSheet } from '@react-pdf/renderer';
 import List2, { Item } from '../List2/List2';
 
 // @TODO move this selector away from this not a container like component.
-import { getFullGrocery } from "../../../selectors/selector";
+import { getFullGrocery } from "../../selectors/selector";
 
 
 import uuidv1 from 'uuid/v1';

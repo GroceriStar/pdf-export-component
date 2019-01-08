@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Text, View, StyleSheet } from '@react-pdf/renderer';
-import List, { Item } from '../List/List';
+import List1, { Item } from '../List/List1';
 
 // @TODO move this selector away from this not a container like component.
-import { getFullGrocery } from "../../../selectors/selector";
+import { getFullGrocery } from "../../selectors/selector";
 
 
 import uuidv1 from 'uuid/v1';
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
 });
 
 
-const Lists = ({ department, ingredients }) => (
+const Lists1 = ({ department, ingredients }) => (
   <View>
     <Text style={styles.title}>
       {department}
@@ -38,7 +38,7 @@ const Lists = ({ department, ingredients }) => (
 
 // @TODO this is a bad situation where we have a passing data as it is - we use names, not id at not a main container - component
 // and this will be hardly to catch later
-const RenderLists = (props) => (
+const RenderLists1 = (props) => (
   <View>
     {getFullGrocery(props.groceryName2).map(item => (
       <Lists
@@ -50,9 +50,9 @@ const RenderLists = (props) => (
 );
 
 
-Lists.propTypes = {
+Lists1.propTypes = {
   name: PropTypes.string,
   skills: PropTypes.array,
 };
 
-export default RenderLists;
+export default RenderLists1;

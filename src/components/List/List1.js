@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   }
 });
 
-const List = ({ children }) => children;
+const List1 = ({ children }) => children;
 
 
 export const Item  = ({ children }) => (
@@ -45,7 +45,7 @@ export const Item  = ({ children }) => (
   </View>
 );
 
-List.propTypes = {
+List1.propTypes = {
   children: PropTypes.node,
 };
 
@@ -55,4 +55,4 @@ Item.propTypes = {
 
 
 
-export default List;
+export default List1;
