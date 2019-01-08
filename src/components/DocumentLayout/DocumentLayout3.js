@@ -8,7 +8,7 @@ import {
 
 // import styles from './styles'
 
-import RenderLists3 from '../RenderLists3/RenderLists3';
+import RenderLists3 from '../RenderLists/RenderLists3';
 
 // const DocumentLayout = ( styles, name ) => (
 import { getFullGrocery } from "../../selectors/selector";

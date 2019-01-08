@@ -8,7 +8,7 @@ import {
 
 // import styles from './styles'
 
-import RenderLists2 from '../RenderLists2/RenderLists2';
+import RenderLists2 from '../RenderLists/RenderLists2';
 
 // const DocumentLayout = ( styles, name ) => (
 
