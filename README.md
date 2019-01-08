@@ -12,6 +12,8 @@
 
 example how i use list:
 
+
+<!--
 ```
 // this is an ingredient for list
 import React, { Component, Fragment } from 'react';
@@ -28,6 +30,7 @@ const IngredientsList = ({ ingredients, title }) => (
 
 );
 ```
+-->
 
  - for creating build run 'yarn clean && yarn build'
  - tests, lint, coverage is not working at this moment
