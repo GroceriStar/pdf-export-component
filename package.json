@@ -9,7 +9,7 @@
   "private": false,
   "scripts": {
     "build": "babel src -d lib",
-    "prepare": "yarn clean",
+    "#prepare": "yarn clean",
     "clean": "rimraf ./coverage ./lib",
     "lint": "eslint src",
     "zprepublish": "yarn clean && yarn build",
