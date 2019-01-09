@@ -71,14 +71,9 @@ const ListsDepartment = ({ department, ingredients }) => (
 
 const RenderLists3 = ({ data }) => {
 
-  // const { data } = props;
-  console.log( data );
-  // console.log( props );
-
   return (
     <View>
-      zzzzzz
-    {/*
+
       {data && data.map(item => (
         <ListsDepartment
           key={uuidv1()}
@@ -86,17 +81,16 @@ const RenderLists3 = ({ data }) => {
           ingredients={item.ingredients} />
       ))}
 
-      */}
     </View>
   );
 
 
 }
 
-// ListsDepartment.propTypes = {
-//   // name: PropTypes.array, because getting an error expected array but receiving string
-//   department: PropTypes.string,
-//   ingredients: PropTypes.array,
-// };
+ListsDepartment.propTypes = {
+  // name: PropTypes.array, because getting an error expected array but receiving string
+  department: PropTypes.string,
+  ingredients: PropTypes.array,
+};
 
 export default RenderLists3;
