@@ -18,15 +18,25 @@ example how i use list:
 // this is an ingredient for list
 import React, { Component, Fragment } from 'react';
 
-import List from './List/DefaultList'
-or import from separated module via npm logic...
+import { RenderLists3 } from '@groceristar/pdf-export';
+// import styles as well
+...
+return (
 
-const IngredientsList = ({ ingredients, title }) => (
+  <PDFViewer width={1200} height={1000}>
+    <Document>
+      <Page size="A4" style={styles.page} wrap>
+        <View style={styles.section}>
+          <Text style={styles.text}>
+            Page Header - Document title
+          </Text>
 
-  <Fragment>
-    <h2>{title}</h2>
-    <DefaultList items={ingredients} />
-  </Fragment>
+          <RenderLists3 data={data} />
+
+      </View>
+      </Page>
+    </Document>
+  </PDFViewer>
 
 );
 ```
