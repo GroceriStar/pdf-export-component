@@ -69,9 +69,9 @@ const ListsDepartment = ({ department, ingredients }) => (
 // @TODO this is a bad situation where we have a passing data as it is - we use names, not id at not a main container - component
 // and this will be hardly to catch later
 
-const RenderLists3 = (props) => {
+const RenderLists3 = ({ data }) => {
 
-  const { data } = props;
+  // const { data } = props;
   console.log( data );
   // console.log( props );
 
