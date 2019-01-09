@@ -40,6 +40,9 @@ return (
 
 );
 ```
+
+sandbox project https://github.com/GroceriStar/react-print-pdf
+
 -->
 
  - for creating build run 'yarn clean && yarn build'
