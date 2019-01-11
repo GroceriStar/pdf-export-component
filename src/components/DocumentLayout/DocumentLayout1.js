@@ -12,14 +12,14 @@ import RenderLists1 from '../RenderLists/RenderLists1';
 
 // const DocumentLayout = ( styles, name ) => (
 
-  const DocumentLayout1 = ( styles, name ) => (
+  const DocumentLayout1 = ( styles, name, data ) => (
   <Document>
     <Page size="A4" style={styles.page} wrap>
       <View style={styles.section}>
         <Text style={styles.text}>
           {name}
         </Text>
-        <RenderLists1 groceryName2={name}/>
+        <RenderLists1 data={data}/>
       </View>
     </Page>
   </Document>

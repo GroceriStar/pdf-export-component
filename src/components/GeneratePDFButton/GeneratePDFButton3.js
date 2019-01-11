@@ -33,7 +33,7 @@ class GeneratePDFButton3 extends React.Component {
         }
 
          {!this.state.isHidden &&
-            <DownloadPDFLink3 name={this.props.name}/>
+            <DownloadPDFLink3 name={this.props.name} data={this.props.data}/>
          }
        </div>
    );

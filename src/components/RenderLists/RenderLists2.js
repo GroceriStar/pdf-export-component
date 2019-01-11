@@ -6,8 +6,7 @@ import List2, { Item } from '../List/List2';
 import uuidv1 from 'uuid/v1';
 
 // @TODO move this selector away from this not a container like component.
-import { getFullGrocery } from "../../selectors/selector";
-import StylesRenderLists2 from "./StylesRenderLists2";
+import styles from "./StylesRenderLists2";
 
 const Lists2 = ({ department, ingredients }) => (
   <View style={styles.main}>
@@ -23,9 +22,9 @@ const Lists2 = ({ department, ingredients }) => (
 
 // @TODO this is a bad situation where we have a passing data as it is - we use names, not id at not a main container - component
 // and this will be hardly to catch later
-const RenderLists2 = (props) => (
+const RenderLists2 = ({ data }) => (
   <View>
-    {getFullGrocery(props.groceryName2).map(item => (
+    {data.map(item => (
       <Lists2
         key={uuidv1()}
         department={item.department}
@@ -36,8 +35,8 @@ const RenderLists2 = (props) => (
 
 
 Lists2.propTypes = {
-  name: PropTypes.string,
-  skills: PropTypes.array,
+  department: PropTypes.string,
+  ingredients: PropTypes.array,
 };
 
 export default RenderLists2;

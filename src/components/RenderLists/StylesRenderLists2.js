@@ -1,6 +1,6 @@
 import { StyleSheet } from '@react-pdf/renderer';
 
-const StylesRenderLists2 = StyleSheet.create({
+const styles = StyleSheet.create({
   title: {
     fontSize: 16,
     marginBottom: 10,
@@ -22,4 +22,4 @@ const StylesRenderLists2 = StyleSheet.create({
   },
 });
 
-export default StylesRenderLists2;
+export default styles;
