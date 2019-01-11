@@ -7,19 +7,7 @@ import uuidv1 from 'uuid/v1';
 
 // @TODO move this selector away from this not a container like component.
 import { getFullGrocery } from "../../selectors/selector";
-
-const styles = StyleSheet.create({
-  title: {
-    fontSize: 16,
-    marginBottom: 10,
-    color:"blue",
-  },
-  skills: {
-    fontSize: 14,
-    marginBottom: 10,
-  },
-});
-
+import StylesRenderLists1 from "./StylesRenderLists1";
 
 const Lists1 = ({ department, ingredients }) => (
   <View>

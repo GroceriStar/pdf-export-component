@@ -7,33 +7,7 @@ import uuidv1 from 'uuid/v1';
 
 // @TODO move this selector away from this not a container like component.
 import { getFullGrocery } from "../../selectors/selector";
-
-const styles = StyleSheet.create({
-  title: {
-    fontSize: 16,
-    marginBottom: 10,
-    borderRadius: 5,
-    backgroundColor:'#45322E',
-    color:"white",
-    // borderBottomWidth: 5,
-    //   borderBottomColor: 'red',
-    // borderBottomStyle: "solid",
-    padding: 4,
-    // border: '1 solid black',
-    // borderWidth: 1,
-    // borderColor: 'black',
-  },
-  skills: {
-    fontSize: 14,
-    marginBottom: 10,
-  },
-  main:{
-  marginTop: 10,
-  // borderLeft: '1 solid black',
-  // borderRight: '1 solid black',
-  },
-});
-
+import StylesRenderLists2 from "./StylesRenderLists2";
 
 const Lists2 = ({ department, ingredients }) => (
   <View style={styles.main}>
