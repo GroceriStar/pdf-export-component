@@ -32,7 +32,7 @@ class DownloadPDFLink3 extends Component {
           size="large">
 
            <PDFDownloadLink
-             document={DocumentLayout3(styles, this.props.name)}
+             document={DocumentLayout3(styles, this.props.name, this.props.data)}
              fileName={this.props.name + ".pdf"}>
                {({ blob, url, loading, error }) => (
                  loading ? 'Loading document...' : 'Download now!'

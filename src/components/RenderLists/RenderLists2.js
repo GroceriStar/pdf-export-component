@@ -6,34 +6,7 @@ import List2, { Item } from '../List/List2';
 import uuidv1 from 'uuid/v1';
 
 // @TODO move this selector away from this not a container like component.
-import { getFullGrocery } from "../../selectors/selector";
-
-const styles = StyleSheet.create({
-  title: {
-    fontSize: 16,
-    marginBottom: 10,
-    borderRadius: 5,
-    backgroundColor:'#45322E',
-    color:"white",
-    // borderBottomWidth: 5,
-    //   borderBottomColor: 'red',
-    // borderBottomStyle: "solid",
-    padding: 4,
-    // border: '1 solid black',
-    // borderWidth: 1,
-    // borderColor: 'black',
-  },
-  skills: {
-    fontSize: 14,
-    marginBottom: 10,
-  },
-  main:{
-  marginTop: 10,
-  // borderLeft: '1 solid black',
-  // borderRight: '1 solid black',
-  },
-});
-
+import styles from "./StylesRenderLists2";
 
 const Lists2 = ({ department, ingredients }) => (
   <View style={styles.main}>
@@ -49,9 +22,9 @@ const Lists2 = ({ department, ingredients }) => (
 
 // @TODO this is a bad situation where we have a passing data as it is - we use names, not id at not a main container - component
 // and this will be hardly to catch later
-const RenderLists2 = (props) => (
+const RenderLists2 = ({ data }) => (
   <View>
-    {getFullGrocery(props.groceryName2).map(item => (
+    {data.map(item => (
       <Lists2
         key={uuidv1()}
         department={item.department}
@@ -62,8 +35,8 @@ const RenderLists2 = (props) => (
 
 
 Lists2.propTypes = {
-  name: PropTypes.string,
-  skills: PropTypes.array,
+  department: PropTypes.string,
+  ingredients: PropTypes.array,
 };
 
 export default RenderLists2;

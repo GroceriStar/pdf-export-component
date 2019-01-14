@@ -11,16 +11,15 @@ import {
 import RenderLists3 from '../RenderLists/RenderLists3';
 
 // const DocumentLayout = ( styles, name ) => (
-import { getFullGrocery } from "../../selectors/selector";
 
-  const DocumentLayout3 = ( styles, name ) => (
+  const DocumentLayout3 = ( styles, name, data ) => (
   <Document>
     <Page size="A4" style={styles.page} wrap>
       <View style={styles.section}>
         <Text style={styles.text}>
           {name}
         </Text>
-          <RenderLists3 data={getFullGrocery(name)} />
+          <RenderLists3 data={data} />
         {/* <View style={styles.block}>
           <View>
             <Text>one</Text>
