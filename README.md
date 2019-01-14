@@ -1,5 +1,5 @@
-<!--[![npm version](https://badge.fury.io/js/%40groceristar%2Fgrocery-component.svg)](https://badge.fury.io/js/%40groceristar%2Fgrocery-component)
--->
+
+[![npm version](https://badge.fury.io/js/%40groceristar%2Fpdf-export.svg)](https://badge.fury.io/js/%40groceristar%2Fpdf-export)
 
 ``` yarn add @groceristar/pdf-export ```
 
