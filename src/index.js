@@ -1,17 +1,3 @@
-// import TodaysDate     from '~/TodaysDate'
-// // import List           from '~/List/List'
-//
-//
-// export {
-//   TodaysDate,
-//   // List
-//
-// };
-
-// example for our current case:
-//import DownloadPDFLink1   from '~/DownloadPDFLink/DownloadPDFLink1';
-
-// from showcase
 import DownloadPDFLink1   from '~/DownloadPDFLink/DownloadPDFLink1';
 import DownloadPDFLink2   from '~/DownloadPDFLink/DownloadPDFLink2';
 import DownloadPDFLink3   from '~/DownloadPDFLink/DownloadPDFLink3';
