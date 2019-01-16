@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, StyleSheet } from '@react-pdf/renderer';
 
 
-const RenderLists3 = ({ data }) => {
+const RenderLists4 = ({ data }) => {
   return (
     <View>
       <Text>{data.title}</Text>
