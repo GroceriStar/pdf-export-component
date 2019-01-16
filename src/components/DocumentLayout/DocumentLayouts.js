@@ -15,8 +15,8 @@ import RenderLists4 from '../RenderLists/RenderLists4';
 
 import styles from './styles';
 
-const DocumentLayouts = ( type, name, data ) => (
-  let layout
+const DocumentLayouts = ( type, name, data ) => {
+  let layout;
 
   switch(type){
     case 'PDF1':
@@ -52,6 +52,6 @@ return(
     </Page>
   </Document>
 )
-)
+}
 
 export default DocumentLayouts;
