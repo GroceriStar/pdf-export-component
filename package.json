@@ -34,13 +34,13 @@
   },
   "peerDependencies": {
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "@groceristar/groceristar-fetch": "^1.1.37"
   },
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@groceristar/groceristar-fetch": "^1.1.37",
     "@react-pdf/renderer": "^1.1.1",
     "uuid": "^3.3.2"
   }
