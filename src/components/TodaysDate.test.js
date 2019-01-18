@@ -1,5 +1,5 @@
 import React    from 'react';
-
+import ReactDOM from "react-dom";
 import Enzyme, { shallow, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
@@ -12,6 +12,6 @@ describe("<TodaysDate /> component shallow only methods ", () => {
 
     const wrapper = shallow(<TodaysDate />);
     expect(wrapper).toBe(true)
-      // ReactDOM.render(<List />, div);
+      ReactDOM.render(<List />, div);
   });
 });
