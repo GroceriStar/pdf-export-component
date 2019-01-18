@@ -658,16 +658,6 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@groceristar/groceristar-fetch@^1.1.37":
-  version "1.1.45"
-  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-1.1.45.tgz#bc2ab54e45872ea76a608a91e0fbd1a884baffc9"
-  integrity sha512-nXz9u8earRzwYQW8LILXWRh0gd9VL7271z5Laa42yf6hWgh8h9NRuL+v4mDSM9YoFaE6X6YLqRTGl+mB9b4Nhg==
-  dependencies:
-    fs "0.0.1-security"
-    lodash "^4.17.10"
-    underscore "^1.9.1"
-    uuid "3.3.2"
-
 "@react-pdf/fontkit@^1.11.0", "@react-pdf/fontkit@^1.13.0":
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/@react-pdf/fontkit/-/fontkit-1.13.0.tgz#ec14cc61120e814c1d48cf276771684ec615be9e"
@@ -697,9 +687,9 @@
   integrity sha1-APy5adykzoKgp2c0E63gOeR7Nh4=
 
 "@react-pdf/renderer@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@react-pdf/renderer/-/renderer-1.1.1.tgz#da745524c5590b82a97325703ecbd54e26c38b5d"
-  integrity sha512-Vfk/e/yLkWn15A8s8hE4+bCgKV+guTLs0asNSRHygdXb6mci8RIu+9AHGHOZo6Ac04KF9h9w2VPZKyovWLthIg==
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@react-pdf/renderer/-/renderer-1.2.0.tgz#331744b3daaf7431a7df256b27231923da3b7027"
+  integrity sha512-+KFSlzGD7Y6uKQQrrXgPzANA2tnEZ8gE2qK5ZeNQarwwjARbAo02y3x40dH35m6ByC2j6Tr8PSdYbzhw+S+lvg==
   dependencies:
     "@react-pdf/fontkit" "^1.13.0"
     "@react-pdf/pdfkit" "^1.2.0"
@@ -2375,11 +2365,6 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
-
-fs@0.0.1-security:
-  version "0.0.1-security"
-  resolved "https://registry.yarnpkg.com/fs/-/fs-0.0.1-security.tgz#8a7bd37186b6dddf3813f23858b57ecaaf5e41d4"
-  integrity sha1-invTcYa23d84E/I4WLV+yq9eQdQ=
 
 fsevents@^1.2.2, fsevents@^1.2.3:
   version "1.2.4"
@@ -5386,11 +5371,6 @@ uglify-js@^3.1.4:
     commander "~2.17.1"
     source-map "~0.6.1"
 
-underscore@^1.9.1:
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.9.1.tgz#06dce34a0e68a7babc29b365b8e74b8925203961"
-  integrity sha512-5/4etnCkd9c8gwgowi5/om/mYO5ajCaOgdzj/oW+0eQV9WxKBDZw5+ycmKmeaTXjInS/W0BzpGLo2xR2aBwZdg==
-
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/unicode-canonical-property-names-ecmascript/-/unicode-canonical-property-names-ecmascript-1.0.4.tgz#2619800c4c825800efdd8343af7dd9933cbe2818"
@@ -5475,7 +5455,7 @@ util.promisify@^1.0.0:
     define-properties "^1.1.2"
     object.getownpropertydescriptors "^2.0.3"
 
-uuid@3.3.2, uuid@^3.3.2:
+uuid@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
   integrity sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
