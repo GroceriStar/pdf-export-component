@@ -20,23 +20,23 @@ const DocumentLayouts = ( type, name, data ) => {
 
   switch(type){
     case 'PDF1':
-      layout = <RenderLists1 data={data}/>
+      layout = <RenderLists1 data={data} />
       break;
 
     case 'PDF2':
-      layout = <RenderLists2 data={data}/>
+      layout = <RenderLists2 data={data} />
       break;
 
     case 'PDF3':
-      layout = <RenderLists3 data={data}/>
+      layout = <RenderLists3 data={data} />
       break;
 
     case 'PDF4':
-      layout = <RenderLists4 data={data}/>
+      layout = <RenderLists4 data={data} />
       break;
 
     default:
-      layout = <RenderLists1 data={data}/>
+      layout = <RenderLists1 data={data} />
       break;
   }
 
