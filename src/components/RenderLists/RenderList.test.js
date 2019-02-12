@@ -6,6 +6,9 @@ import RenderList4 from './RenderLists4.js';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
+// Setup enzyme's react adapter
+Enzyme.configure({ adapter: new EnzymeAdapter() });
+
 describe('Test RenderList attribute', () => {
   it('Renderlist1 has data attribute', () => {
     const renderList = shallow(<RenderList1 data={data}/>);
