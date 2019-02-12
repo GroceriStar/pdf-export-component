@@ -4,7 +4,7 @@ import RenderList2 from './RenderLists2.js';
 import RenderList3 from './RenderLists3.js';
 import RenderList4 from './RenderLists4.js';
 import Enzyme, { shallow } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import EnzymeAdapter from 'enzyme-adapter-react-16';
 
 // Setup enzyme's react adapter
 Enzyme.configure({ adapter: new EnzymeAdapter() });
