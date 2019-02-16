@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Text, View, StyleSheet } from '@react-pdf/renderer';
-import List3, { Item } from '../List/List3';
+import List3, { Item } from '../../List/List3';
 
 import uuidv1 from 'uuid/v1';
 import styles from "./StylesRenderLists3";

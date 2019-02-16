@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Text, View, StyleSheet } from '@react-pdf/renderer';
-import List1, { Item } from '../List/List1';
+import List1, { Item } from '../../List/List1';
 import uuidv1 from 'uuid/v1';
 
 // @TODO move this selector away from this not a container like component.
