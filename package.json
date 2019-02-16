@@ -1,6 +1,6 @@
 {
   "name": "@groceristar/pdf-export",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "description": "module to use pdf-export feature between projects",
   "main": "lib/index.js",
   "repository": "https://github.com/GroceriStar/pdf-export-component",
@@ -44,7 +44,9 @@
     "access": "public"
   },
   "dependencies": {
+    "@groceristar/groceristar-fetch": "^1.2.2",
     "@react-pdf/renderer": "^1.2.0",
+    "antd": "^3.13.2",
     "uuid": "^3.3.2"
   }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
   Text,
   Page,
@@ -12,6 +13,7 @@ import RenderLists1 from '../RenderLists/RenderLists1';
 import RenderLists2 from '../RenderLists/RenderLists2';
 import RenderLists3 from '../RenderLists/RenderLists3';
 import RenderLists4 from '../RenderLists/RenderLists4';
+
 
 import styles from './styles';
 
@@ -40,18 +42,18 @@ const DocumentLayouts = ( type, name, data ) => {
       break;
   }
 
-return(
-  <Document>
-    <Page size="A4" style={styles.page} wrap>
-      <View style={styles.section}>
-        <Text style={styles.text}>
-          {name}
-        </Text>
-        {layout}
-      </View>
-    </Page>
-  </Document>
-)
+  return (
+    <Document>
+      <Page size="A4" style={styles.page} wrap>
+        <View style={styles.section}>
+          <Text style={styles.text}>
+            {name}
+          </Text>
+          {layout}
+        </View>
+      </Page>
+    </Document>
+  )
 }
 
 export default DocumentLayouts;
