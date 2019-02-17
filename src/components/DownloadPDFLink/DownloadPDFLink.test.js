@@ -1,13 +1,17 @@
 import React    from 'react';
 import ReactDOM from 'react-dom';
 import Enzyme, { shallow, configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+
+
+import EnzymeAdapter from 'enzyme-adapter-react-16'
 
 import TodaysDate from '~/TodaysDate';
 
 import DownloadPDFLink from './DownloadPDFLink'
 
-Enzyme.configure({ adapter: new Adapter() });
+
+// Setup enzyme's react adapter
+Enzyme.configure({ adapter: new EnzymeAdapter() });
 
 describe("<TodaysDate /> component shallow only methods ", () => {
   it("renders without crashing", () => {
