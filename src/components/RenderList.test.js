@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import Enzyme, { shallow, mount } from 'enzyme'
 import EnzymeAdapter from 'enzyme-adapter-react-16'
 
-import RenderList1 from '~/RenderLists1/RenderLists1js'
-import RenderList2 from '~/RenderLists2/RenderLists2.js'
-import RenderList3 from '~/RenderLists3/RenderLists3.js'
-import RenderList4 from '~/RenderLists4/RenderLists4.js'
+import RenderList1 from '~/RenderLists1/RenderLists1'
+import RenderList2 from '~/RenderLists2/RenderLists2'
+import RenderList3 from '~/RenderLists3/RenderLists3'
+import RenderList4 from '~/RenderLists4/RenderLists4'
 // import {
 //   RenderLists1,
 //   RenderLists2,
@@ -29,15 +29,16 @@ describe('Test RenderList attribute', () => {
   const recipeData = getRecipes()[0];
   //@TODO replace a similar tests with a function
 
-  // it('Renderlist1 has data attribute', () => {
-  //
-  //   // (typeof A === "object") && (A !== null)
-  //
-  //   const wrapper = mount(<RenderList1 data={data} />);
-  //   // const prop = wrapper.props().data;
-  //   // console.log(prop);
-  //   expect(wrapper.props().data).toEqual(expect.any(Object))
-  // })
+  it('Renderlist1 has data attribute', () => {
+
+    // (typeof A === "object") && (A !== null)
+
+    const wrapper = mount(<RenderList1 data={data} />);
+    // const prop = wrapper.props().data;
+    // console.log(prop);
+    expect(wrapper.prop('data')).toBe(true)
+    // expect(wrapper.props().data).toEqual(expect.any(Object))
+  })
 
   // it('Renderlist2 has data attribute', () => {
   //   const renderList = shallow(<RenderList2 data={data} />);
@@ -56,4 +57,13 @@ describe('Test RenderList attribute', () => {
   //   const data = renderList.node.props.data;
   //   // expect(data).toBe('data')
   // })
+
+
+  it('Render List1 should have Lists1 inside of it', () => {
+    const wrapper = shallow(<RenderList1 data={data} />);
+    expect(wrapper).find('List1').toBe(true);
+  })
 })
+
+
+// here we'll have an example about checking what is inside of our Render List components

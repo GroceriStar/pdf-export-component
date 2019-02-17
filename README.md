@@ -47,7 +47,7 @@ return (
 
 
 - [ ] Reinstall fetch as dev dependency
-
+- [ ] tests takes a lot of times
 ```
 
 sandbox project https://github.com/GroceriStar/react-print-pdf
