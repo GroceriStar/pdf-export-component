@@ -3,31 +3,29 @@ import PropTypes from 'prop-types';
 import uuidv1 from 'uuid/v1';
 
 import { Text, View, StyleSheet } from '@react-pdf/renderer';
-
-import List2, { Item } from '../List/List2';
-
+import List1, { Item } from '../../List/List1';
+import uuidv1 from 'uuid/v1';
 
 // @TODO move this selector away from this not a container like component.
-import styles from "./StylesRenderLists2";
+import styles from "./StylesRenderLists1";
 
-const Lists2 = ({ department, ingredients }) => (
-  <View style={styles.main}>
+const Lists1 = ({ department, ingredients }) => (
+  <View>
     <Text style={styles.title}>
       {department}
     </Text>
-    <List2>
-      {ingredients.map((ingredient, num) => <Item
-        key={uuidv1()}>{ingredient}</Item>)}
-    </List2>
+    <List1>
+      {ingredients.map((ingredient) => <Item key={uuidv1()}>{ingredient}</Item>)}
+    </List1>
   </View>
 );
 
 // @TODO this is a bad situation where we have a passing data as it is - we use names, not id at not a main container - component
 // and this will be hardly to catch later
-const RenderLists2 = ({ data }) => (
+const RenderLists1 = ({ data }) => (
   <View>
     {data.map(item => (
-      <Lists2
+      <Lists1
         key={uuidv1()}
         department={item.department}
         ingredients={item.ingredients} />
@@ -36,9 +34,9 @@ const RenderLists2 = ({ data }) => (
 );
 
 
-Lists2.propTypes = {
+Lists1.propTypes = {
   department: PropTypes.string,
   ingredients: PropTypes.array,
 };
 
-export default RenderLists2;
+export default RenderLists1;
