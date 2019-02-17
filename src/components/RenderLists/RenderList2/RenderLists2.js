@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import uuidv1 from 'uuid/v1';
 
 import { Text, View, StyleSheet } from '@react-pdf/renderer';
-import List2, { Item } from '../../List/List2';
-import uuidv1 from 'uuid/v1';
+import List2, { Item } from '~/List/List2';
+
 
 // @TODO move this selector away from this not a container like component.
 import styles from "./StylesRenderLists2";
