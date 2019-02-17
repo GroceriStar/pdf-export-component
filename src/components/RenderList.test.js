@@ -27,18 +27,25 @@ describe('Test RenderList attribute', () => {
 
   const data       = getFullGrocery("19 Gluten-Free Foods Shopping List");
   const recipeData = getRecipes()[0];
+
   //@TODO replace a similar tests with a function
 
-  it('Renderlist1 has data attribute', () => {
+  const wrapper = mount(<RenderList1 data={data} />);
 
-    // (typeof A === "object") && (A !== null)
+  console.log(wrapper.prop('data'))
+  // expect(wrapper.prop('data')).toBe(true)
 
-    const wrapper = mount(<RenderList1 data={data} />);
-    // const prop = wrapper.props().data;
-    // console.log(prop);
-    expect(wrapper.prop('data')).toBe(true)
-    // expect(wrapper.props().data).toEqual(expect.any(Object))
-  })
+
+  // it('Renderlist1 has data attribute', () => {
+  //
+  //   // (typeof A === "object") && (A !== null)
+  //
+  //   const wrapper = mount(<RenderList1 data={data} />);
+  //   // const prop = wrapper.props().data;
+  //   // console.log(prop);
+  //   expect(wrapper.prop('data')).toBe(true)
+  //   // expect(wrapper.props().data).toEqual(expect.any(Object))
+  // })
 
   // it('Renderlist2 has data attribute', () => {
   //   const renderList = shallow(<RenderList2 data={data} />);
@@ -59,10 +66,11 @@ describe('Test RenderList attribute', () => {
   // })
 
 
-  it('Render List1 should have Lists1 inside of it', () => {
-    const wrapper = shallow(<RenderList1 data={data} />);
-    expect(wrapper.find('List1')).toBe(true);
-  })
+  // it('Render List1 should have Lists1 inside of it', () => {
+  //   const wrapper = shallow(<RenderList1 data={data} />);
+  //   expect(wrapper.find('List1')).toBe(true);
+  // })
+  //
 })
 
 
