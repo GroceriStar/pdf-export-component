@@ -61,7 +61,7 @@ describe('Test RenderList attribute', () => {
 
   it('Render List1 should have Lists1 inside of it', () => {
     const wrapper = shallow(<RenderList1 data={data} />);
-    expect(wrapper).find('List1').toBe(true);
+    expect(wrapper.find('List1')).toBe(true);
   })
 })
 
