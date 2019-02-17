@@ -7,9 +7,9 @@ import List2, { Item } from '~/List/List2';
 
 
 // @TODO move this selector away from this not a container like component.
-import styles from "./StylesRenderLists2";
+import styles from "./styles";
 
-const Lists2 = ({ department, ingredients }) => (
+const ListsWrapper = ({ department, ingredients }) => (
   <View style={styles.main}>
     <Text style={styles.title}>
       {department}
@@ -26,7 +26,7 @@ const Lists2 = ({ department, ingredients }) => (
 const RenderLists2 = ({ data }) => (
   <View>
     {data.map(item => (
-      <Lists2
+      <ListsWrapper
         key={uuidv1()}
         department={item.department}
         ingredients={item.ingredients} />
@@ -35,7 +35,7 @@ const RenderLists2 = ({ data }) => (
 );
 
 
-Lists2.propTypes = {
+ListsWrapper.propTypes = {
   department: PropTypes.string,
   ingredients: PropTypes.array,
 };

@@ -7,9 +7,9 @@ import List1, { Item } from '~/List/List1';
 
 
 // @TODO move this selector away from this not a container like component.
-import styles from "./StylesRenderLists1";
+import styles from "./styles";
 
-const Lists1 = ({ department, ingredients }) => (
+const ListsWrapper = ({ department, ingredients }) => (
   <View>
     <Text style={styles.title}>
       {department}
@@ -22,19 +22,34 @@ const Lists1 = ({ department, ingredients }) => (
 
 // @TODO this is a bad situation where we have a passing data as it is - we use names, not id at not a main container - component
 // and this will be hardly to catch later
+// <View>
+//   {data.map(item => (
+//     <ListsWrapper
+//       key={uuidv1()}
+//       department={item.department}
+//       ingredients={item.ingredients} />
+//   ))}
+// </View>
+
+// Create styles
+const styles = StyleSheet.create({
+  page: {
+    flexDirection: 'row',
+    backgroundColor: '#E4E4E4'
+  },
+  section: {
+    margin: 10,
+    padding: 10,
+    flexGrow: 1
+  }
+});
+
 const RenderLists1 = ({ data }) => (
-  <View>
-    {data.map(item => (
-      <Lists1
-        key={uuidv1()}
-        department={item.department}
-        ingredients={item.ingredients} />
-    ))}
-  </View>
+  <View style={styles.section}> 1</View>
 );
 
 
-Lists1.propTypes = {
+ListsWrapper.propTypes = {
   department: PropTypes.string,
   ingredients: PropTypes.array,
 };

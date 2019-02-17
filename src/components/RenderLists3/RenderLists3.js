@@ -6,7 +6,7 @@ import { Text, View, StyleSheet } from '@react-pdf/renderer';
 import List3, { Item } from '~/List/List3';
 
 
-import styles from "./StylesRenderLists3";
+import styles from "./styles";
 
 
 const ListsDepartment = ({ department, ingredients }) => (
