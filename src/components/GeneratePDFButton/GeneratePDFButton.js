@@ -5,7 +5,7 @@ import { Button } from 'antd';
 
 // import DownloadPDFLink from '../DownloadPDFLink/DownloadPDFLink';
 // @TODO check if this version works - import { DownloadPDFLink } from '~/index'
-import { DownloadPDFLink } from '../../index'
+import { DownloadPDFLink } from '/index'
 
 
 class GeneratePDFButton extends React.Component {
