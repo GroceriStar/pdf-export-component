@@ -1,9 +1,9 @@
 import React       from 'react'
 
-import RenderList1 from './RenderLists1.js'
-import RenderList2 from './RenderLists2.js'
-import RenderList3 from './RenderLists3.js'
-import RenderList4 from './RenderLists4.js'
+import RenderList1 from './RenderLists1/RenderLists1.js'
+import RenderList2 from './RenderLists2/RenderLists2.js'
+import RenderList3 from './RenderLists3/RenderLists3.js'
+import RenderList4 from './RenderLists4/RenderLists4.js'
 
 import Enzyme, { shallow } from 'enzyme'
 import EnzymeAdapter from 'enzyme-adapter-react-16'
