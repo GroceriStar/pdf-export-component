@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import Enzyme, { shallow, mount } from 'enzyme'
 import EnzymeAdapter from 'enzyme-adapter-react-16'
 
-import RenderList1 from './RenderList1/RenderLists1.js'
-import RenderList2 from './RenderList2/RenderLists2.js'
-import RenderList3 from './RenderList3/RenderLists3.js'
-import RenderList4 from './RenderList4/RenderLists4.js'
+import RenderList1 from '~/RenderLists1/RenderLists1js'
+import RenderList2 from '~/RenderLists2/RenderLists2.js'
+import RenderList3 from '~/RenderLists3/RenderLists3.js'
+import RenderList4 from '~/RenderLists4/RenderLists4.js'
 // import {
 //   RenderLists1,
 //   RenderLists2,
