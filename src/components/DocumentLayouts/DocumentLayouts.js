@@ -16,9 +16,12 @@ import { RenderLists1, RenderLists2, RenderLists3, RenderLists4 } from '/index';
 
 import styles from './styles';
 
+//@TODO move away switch into a separated function
+
 const DocumentLayouts = ( type, name, data ) => {
   let layout;
-
+  console.log(type)
+  console.log(name)
   switch(type){
     case 'PDF1':
       layout = <RenderLists1 data={data} />
