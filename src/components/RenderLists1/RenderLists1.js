@@ -7,7 +7,7 @@ import List, { Item } from './List';
 
 
 // @TODO move this selector away from this not a container like component.
-import { styles } from "./styles";
+import { documentStyles as styles } from "./styles";
 
 const ListsWrapper = ({ department, ingredients }) => (
   <View>

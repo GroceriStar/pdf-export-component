@@ -27,7 +27,7 @@ const listStyles = StyleSheet.create({
   }
 });
 
-const styles = StyleSheet.create({
+const documentStyles = StyleSheet.create({
   title: {
     fontSize: 16,
     marginBottom: 10,
@@ -35,4 +35,7 @@ const styles = StyleSheet.create({
   }
 });
 
-export default { styles, listStyles };
+export {
+   documentStyles,
+   listStyles
+ };
