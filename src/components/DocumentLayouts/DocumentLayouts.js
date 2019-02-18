@@ -18,10 +18,9 @@ import styles from './styles';
 
 //@TODO move away switch into a separated function
 
-const DocumentLayouts = ( type, name, data ) => {
+const DocumentLayouts = ( type, documentTitle, data ) => {
   let layout;
-  console.log(type)
-  console.log(name)
+  
   switch(type){
     case 'PDF1':
       layout = <RenderLists1 data={data} />
@@ -49,7 +48,7 @@ const DocumentLayouts = ( type, name, data ) => {
       <Page size="A4" style={styles.page} wrap>
         <View style={styles.section}>
           <Text style={styles.text}>
-            {name}
+            {documentTitle}
           </Text>
           {layout}
         </View>
