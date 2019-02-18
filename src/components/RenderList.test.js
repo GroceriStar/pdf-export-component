@@ -36,16 +36,16 @@ describe('Test RenderList attribute', () => {
   // expect(wrapper.prop('data')).isEmpty(false)
 
 
-  it('Renderlist1 has data attribute', () => {
-
-    // (typeof A === "object") && (A !== null)
-
-    const wrapper = mount(<RenderList1 data={data} />);
-    // const prop = wrapper.props().data;
-    // console.log(prop);
-    expect(wrapper.prop('data').isEmpty()).to.equal(false)
-    // expect(wrapper.props().data).toEqual(expect.any(Object))
-  })
+  // it('Renderlist1 has data attribute', () => {
+  //
+  //   // (typeof A === "object") && (A !== null)
+  //
+  //   const wrapper = mount(<RenderList1 data={data} />);
+  //   // const prop = wrapper.props().data;
+  //   // console.log(prop);
+  //   expect(wrapper.prop('data').isEmpty()).to.equal(false)
+  //   // expect(wrapper.props().data).toEqual(expect.any(Object))
+  // })
 
   // it('Renderlist2 has data attribute', () => {
   //   const renderList = shallow(<RenderList2 data={data} />);

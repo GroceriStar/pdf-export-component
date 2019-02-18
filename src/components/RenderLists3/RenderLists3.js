@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import uuidv1 from 'uuid/v1';
 
 import { Text, View, StyleSheet } from '@react-pdf/renderer';
-import List3, { Item } from '~/List/List3';
+import List, { Item } from '~/List/List3';
 
 
 import styles from "./styles";
@@ -18,14 +18,14 @@ const ListsDepartment = ({ department, ingredients }) => (
     </View>
 
     {/*}<View style={styles.block} > */}
-    <List3>
+    <List>
       {ingredients.map((ingredient, num) =>
         <Item
           key={uuidv1()}>
           {ingredient}
           </Item>
         )}
-    </List3>
+    </List>
      {/*</View> */}
 
   </View>

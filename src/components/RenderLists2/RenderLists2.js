@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import uuidv1 from 'uuid/v1';
 
 import { Text, View, StyleSheet } from '@react-pdf/renderer';
-import List2, { Item } from '~/List/List2';
+import List, { Item } from '~/List/List2';
 
 
 // @TODO move this selector away from this not a container like component.
@@ -14,10 +14,11 @@ const ListsWrapper = ({ department, ingredients }) => (
     <Text style={styles.title}>
       {department}
     </Text>
-    <List2>
-      {ingredients.map((ingredient, num) => <Item
-        key={uuidv1()}>{ingredient}</Item>)}
-    </List2>
+    <List>
+      {ingredients.map((ingredient, num) =>
+        <Item
+          key={uuidv1()}>{ingredient}</Item>)}
+    </List>
   </View>
 );
 
