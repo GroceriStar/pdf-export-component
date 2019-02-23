@@ -700,9 +700,9 @@
     to-fast-properties "^2.0.0"
 
 "@groceristar/groceristar-fetch@^1.2.2":
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-1.2.5.tgz#49c792bf63e89e3104b010512cdc3e31dea69cec"
-  integrity sha512-KTHPKnN3ImgdAq+pF4Vh3r10q5flgZyxeSY9mZbbl7imI4m082YdPPOH0TkJi1W3oINjKxCeuk2wy1bZsqBESg==
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-1.2.6.tgz#6b8c32359db3e338a0f01f4cfe7bf9036f756a48"
+  integrity sha512-9JqYjyLmY3FtmSiyLfkhTqPgZOxL4FyuKemZ9YroCpfUxaAypQVTiZfvB7FT0t7Evq7OiUFrMDxn9Wgu5OHp0Q==
   dependencies:
     "@groceristar/sd-wrapper" "^1.0.6"
     dayjs "^1.8.0"
@@ -5499,7 +5499,7 @@ scheduler@^0.12.0:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
-scheduler@^0.13.1, scheduler@^0.13.2, scheduler@^0.13.3:
+scheduler@^0.13.1, scheduler@^0.13.3:
   version "0.13.3"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.13.3.tgz#bed3c5850f62ea9c716a4d781f9daeb9b2a58896"
   integrity sha512-UxN5QRYWtpR1egNWzJcVLk8jlegxAugswQc984lD3kU7NuobsO37/sRfbpTdBjtnD5TBNFA2Q2oLV5+UmPSmEQ==
