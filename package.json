@@ -9,8 +9,9 @@
   "private": false,
   "scripts": {
     "build": "babel src -d lib",
+    "build:test": "shx rm -rf && babel src -d dist",
     "#prepare": "yarn clean",
-    "clean": "rimraf ./coverage ./lib",
+    "clean": "shx rm -rf ./coverage && shx rm -rf ./lib",
     "lint": "eslint src",
     "zprepublish": "yarn clean && yarn build",
     "test": "jest",
@@ -33,7 +34,7 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "regenerator-runtime": "^0.13.1",
-    "rimraf": "^2.6.3"
+    "shx": "^0.3.2"
   },
   "peerDependencies": {
     "@groceristar/groceristar-fetch": "^1.1.37",
@@ -50,6 +51,8 @@
     "uuid": "^3.3.2"
   },
   "files": [
-    "/lib"
+    "dist/*.js",
+    "dist/*.json",
+    "lib"
   ]
 }

@@ -10,7 +10,12 @@ import {
 // import styles from './styles'
 
 // @TODO i don't like this approach, but it looks simple for now
-import { RenderLists1, RenderLists2, RenderLists3, RenderLists4 } from '/index';
+import {
+  RenderLists1,
+  RenderLists2,
+  RenderLists3,
+  RenderLists4
+} from '/index';
 
 
 
@@ -20,7 +25,7 @@ import styles from './styles';
 
 const DocumentLayouts = ( type, documentTitle, data ) => {
   let layout;
-  
+
   switch(type){
     case 'PDF1':
       layout = <RenderLists1 data={data} />
