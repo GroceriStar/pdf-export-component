@@ -1,6 +1,6 @@
 {
   "name": "@groceristar/pdf-export",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "description": "module to use pdf-export feature between projects",
   "main": "lib/index.js",
   "repository": "https://github.com/GroceriStar/pdf-export-component",
