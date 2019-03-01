@@ -13,6 +13,8 @@
 
 - [ ] update our components in a way so we can actually be free from similar files with similar names.
 
+- [ ] i don't like this name - render lists.
+it should be something simple and better for it.
 
 
 example how i use list:
