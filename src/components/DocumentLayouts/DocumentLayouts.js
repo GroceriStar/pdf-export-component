@@ -7,15 +7,12 @@ import {
   Document
 } from '@react-pdf/renderer';
 
-// import styles from './styles'
 
 // @TODO i don't like this approach, but it looks simple for now
-import {
-  RenderLists1,
-  RenderLists2,
-  RenderLists3,
-  RenderLists4
-} from '/index';
+import RenderLists1       from '~/RenderLists1/RenderLists1';
+import RenderLists2       from '~/RenderLists2/RenderLists2';
+import RenderLists3       from '~/RenderLists3/RenderLists3';
+import RenderLists4       from '~/RenderLists4/RenderLists4';
 
 
 
