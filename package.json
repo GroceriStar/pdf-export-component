@@ -2,7 +2,7 @@
   "name": "@groceristar/pdf-export",
   "version": "1.0.35",
   "description": "module to use pdf-export feature between projects",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/GroceriStar/pdf-export-component",
   "author": "Arthur Tkachenko",
   "license": "MIT",
