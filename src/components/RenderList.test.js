@@ -1,25 +1,20 @@
 import React    from 'react'
 import ReactDOM from 'react-dom';
-import Enzyme, { shallow, mount } from 'enzyme'
+import Enzyme, { configure, shallow, mount } from 'enzyme'
 import EnzymeAdapter from 'enzyme-adapter-react-16'
 
 import RenderList1 from '~/RenderLists1/RenderLists1'
 import RenderList2 from '~/RenderLists2/RenderLists2'
 import RenderList3 from '~/RenderLists3/RenderLists3'
 import RenderList4 from '~/RenderLists4/RenderLists4'
-// import {
-//   RenderLists1,
-//   RenderLists2,
-//   RenderLists3,
-//   RenderLists4
-// } from '/index';
+
 
 import { getFullGrocery, getRecipes } from "/selector";
 
 
 
 // Setup enzyme's react adapter
-Enzyme.configure({ adapter: new EnzymeAdapter() });
+configure({ adapter: new EnzymeAdapter() });
 
 //@TODO move data to before section
 

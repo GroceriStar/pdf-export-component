@@ -9,7 +9,7 @@ import TodaysDate from '~/TodaysDate';
 import DocumentLayouts from './DocumentLayouts'
 
 // Setup enzyme's react adapter
-Enzyme.configure({ adapter: new EnzymeAdapter() });
+configure({ adapter: new EnzymeAdapter() });
 
 describe("<TodaysDate /> component shallow only methods ", () => {
   it("renders without crashing", () => {

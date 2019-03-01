@@ -2,12 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import uuidv1 from 'uuid/v1';
 
-import { Text, View, StyleSheet } from '@react-pdf/renderer';
+import { Text, View } from '@react-pdf/renderer';
 import List, { Item } from './List';
 
-
-import styles from "./styles";
-
+import { documentStyles as styles } from "./styles";
 
 const ListsDepartment = ({ department, ingredients }) => (
   <View style={styles.main}>
