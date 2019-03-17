@@ -1,25 +1,23 @@
 import commonjs from 'rollup-plugin-commonjs'
 import resolve from 'rollup-plugin-node-resolve'
-
 // import copy from 'rollup-plugin-copy-assets';
 import babel from 'rollup-plugin-babel'
 import pkg from './package.json'
-// import cleanup from 'rollup-plugin-cleanup';
-// https://github.com/mjeanroy/rollup-plugin-prettier
 
 
 const extensions = [
   '.js'
 ]
 
-const name = 'StaticDataWrapper'
+const name = 'ShoplistBlocksComponents'
+
 
 export default {
   input: './src/index.js',
 
   // Specify here external modules which you don't want to include in your bundle (for instance: 'lodash', 'moment' etc.)
   // https://rollupjs.org/guide/en#external-e-external
-  external: ['fs', 'path'],
+  external: ['antd', 'lodash', 'uuid'],
 
   plugins: [
     // Allows node_modules resolution
@@ -42,6 +40,9 @@ export default {
       // plugins: plugins
     }),
 
+
+
+    // just fix in order to move json files to npm
     // copy({
     //   assets: [
     //     './src/data'
@@ -55,28 +56,14 @@ export default {
   }, {
     file: pkg.module,
     format: 'es'
-  }, {
-    file: pkg.browser,
-    format: 'iife',
-    name,
-
-    // https://rollupjs.org/guide/en#output-globals-g-globals
-    globals: {}
-  }]
+  },
+  // {
+  //   file: pkg.browser,
+  //   format: 'iife',
+  //   name,
+  //
+  //   // https://rollupjs.org/guide/en#output-globals-g-globals
+  //   globals: {}
+  // }
+]
 }
-
-//
-// var rollup = require('rollup')
-// var babel = require('rollup-plugin-babel')
-// // @TODO install that modules and connect them
-// // rollup-plugin-json
-// // rollup-plugin-node-resolve
-// rollup.rollup({
-//   entry: 'src/main.js', // 'src/index.js'
-//   plugins: [ babel() ]
-// }).then(function (bundle) {
-//   bundle.write({
-//     dest: 'dist/bundle.js',
-//     format: 'umd'
-//   })
-// })
