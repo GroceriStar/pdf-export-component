@@ -3,11 +3,13 @@
   "version": "1.0.38",
   "description": "module to use pdf-export feature between projects",
   "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "repository": "https://github.com/GroceriStar/pdf-export-component",
   "author": "Arthur Tkachenko",
   "license": "MIT",
   "private": false,
   "scripts": {
+    "bundle":"rollup -c",
     "build": "babel src -d dist",
     "build:test": "shx rm -rf && babel src -d dist",
     "#prepare": "yarn clean",
