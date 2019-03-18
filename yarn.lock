@@ -726,9 +726,9 @@
     minimist "^1.2.0"
 
 "@groceristar/groceristar-fetch@^1.2.13":
-  version "1.2.14"
-  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-1.2.14.tgz#dd80a24e25008c1ab818d90d5164fef63b5a5b99"
-  integrity sha512-UKZL61j/miIFnb0NNkLYmTa+Qq13VCVYdX9zMB4rfi6bUXwILeUm4OoYWQKhAg+KbNZOnjI+GGp0TaPguYniLQ==
+  version "1.2.17"
+  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-1.2.17.tgz#cd0e06df9364cef0b7f3b8d4c8d5bebbd62a06fc"
+  integrity sha512-Y1JCY1oeFHec4W6cXObEdM+dByAy4VcCT4iqish6HWcSUXqwbQJ0UwPrUjW6WgS28CCUadRuK/tKe+bEcRq4yw==
   dependencies:
     "@groceristar/sd-wrapper" "^1.0.15"
     dayjs "^1.8.0"
