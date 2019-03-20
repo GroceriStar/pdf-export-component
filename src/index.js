@@ -1,10 +1,9 @@
-import GeneratePDFButton from '~/GeneratePDFButton/GeneratePDFButton';
+import GeneratePDFButton from '~/GeneratePDFButton/GeneratePDFButton'
 
 // Should it be disabled completely? We usually use GeneratePDFButton...
 // import DownloadPDFLink   from '~/DownloadPDFLink/DownloadPDFLink';
 
-import DocumentLayouts    from '~/DocumentLayouts/DocumentLayouts';
-
+import DocumentLayouts from '~/DocumentLayouts/DocumentLayouts'
 
 const extras = {
 
@@ -15,7 +14,7 @@ const extras = {
 export {
 
   GeneratePDFButton,
-  DocumentLayouts,
+  DocumentLayouts
   // extras
 
 }

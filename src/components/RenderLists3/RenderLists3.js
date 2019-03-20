@@ -1,11 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import uuidv1 from 'uuid/v1';
+import React from 'react'
+import PropTypes from 'prop-types'
+import uuidv1 from 'uuid/v1'
 
-import { Text, View } from '@react-pdf/renderer';
-import List, { Item } from './List';
+import { Text, View } from '@react-pdf/renderer'
+import List, { Item } from './List'
 
-import { documentStyles as styles } from "./styles";
+import { documentStyles as styles } from './styles'
 
 const ListsDepartment = ({ department, ingredients }) => (
   <View style={styles.main}>
@@ -15,25 +15,24 @@ const ListsDepartment = ({ department, ingredients }) => (
       </Text>
     </View>
 
-    {/*}<View style={styles.block} > */}
+    {/* }<View style={styles.block} > */}
     <List>
       {ingredients.map((ingredient, num) =>
         <Item
           key={uuidv1()}>
           {ingredient}
-          </Item>
-        )}
+        </Item>
+      )}
     </List>
-     {/*</View> */}
+    {/* </View> */}
 
   </View>
-);
+)
 
 // @TODO this is a bad situation where we have a passing data as it is - we use names, not id at not a main container - component
 // and this will be hardly to catch later
 
 const RenderLists3 = ({ data }) => {
-
   return (
     <View>
 
@@ -45,15 +44,13 @@ const RenderLists3 = ({ data }) => {
       ))}
 
     </View>
-  );
-
-
+  )
 }
 
 ListsDepartment.propTypes = {
   // name: PropTypes.array, because getting an error expected array but receiving string
   department: PropTypes.string,
-  ingredients: PropTypes.array,
-};
+  ingredients: PropTypes.array
+}
 
-export default RenderLists3;
+export default RenderLists3

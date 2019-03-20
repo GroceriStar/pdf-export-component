@@ -1,14 +1,14 @@
-import { StyleSheet } from '@react-pdf/renderer';
+import { StyleSheet } from '@react-pdf/renderer'
 
 const listStyles = StyleSheet.create({
   item: {
     flexDirection: 'row',
     marginBottom: 5,
-    "marginLeft": "25px"
+    'marginLeft': '25px'
   },
   bulletPoint: {
     width: 10,
-    fontSize: 14,
+    fontSize: 14
   },
   itemContent: {
     flex: 1,
@@ -23,19 +23,19 @@ const listStyles = StyleSheet.create({
     borderColor: 'black',
     position: 'absolute',
     backgroundColor: 'white',
-    fontSize: 8,
+    fontSize: 8
   }
-});
+})
 
 const documentStyles = StyleSheet.create({
   title: {
     fontSize: 16,
     marginBottom: 10,
-    color:"blue",
+    color: 'blue'
   }
-});
+})
 
 export {
-   documentStyles,
-   listStyles
- };
+  documentStyles,
+  listStyles
+}

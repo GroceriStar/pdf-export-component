@@ -1,12 +1,12 @@
-import { StyleSheet } from '@react-pdf/renderer';
+import { StyleSheet } from '@react-pdf/renderer'
 
 const documentStyles = StyleSheet.create({
   title: {
     fontSize: 16,
     marginBottom: 10,
     borderRadius: 5,
-    backgroundColor:'#45322E',
-    color:"white",
+    backgroundColor: '#45322E',
+    color: 'white',
     // borderBottomWidth: 5,
     //   borderBottomColor: 'red',
     // borderBottomStyle: "solid",
@@ -14,10 +14,10 @@ const documentStyles = StyleSheet.create({
     // border: '1 solid black',
     // borderWidth: 1,
     // borderColor: 'black',
-    flexDirection:'column',
+    flexDirection: 'column'
   },
   skills: {
-    fontSize: '14px',
+    fontSize: '14px'
     // marginBottom: 10,
   },
   main: {
@@ -32,33 +32,33 @@ const documentStyles = StyleSheet.create({
   block: {
 
     margin: '0',
-    flexDirection:'column',
-    backgroundColor:'green',
+    flexDirection: 'column',
+    backgroundColor: 'green'
   }
-});
+})
 
 const listStyles = StyleSheet.create({
   item: {
     flexDirection: 'row',
     // marginBottom: 5,
-    "marginLeft": "25px",
+    'marginLeft': '25px'
   },
   bulletPoint: {
     width: 10,
-    fontSize: 14,
+    fontSize: 14
   },
   itemContent: {
     flex: 1,
     fontSize: 14
   },
   blockItem: {
-   backgroundColor: '#e14427',
-   // marginLeft:10,
-   border: '1 solid black'
- },
+    backgroundColor: '#e14427',
+    // marginLeft:10,
+    border: '1 solid black'
+  },
   knob: {
-    borderBottomWidth:1,
-    borderBottomColor:'black',
+    borderBottomWidth: 1,
+    borderBottomColor: 'black',
     // marginLeft:10,
     alignItems: 'center',
     justifyContent: 'center',
@@ -68,13 +68,11 @@ const listStyles = StyleSheet.create({
     borderColor: 'black',
     position: 'absolute',
     backgroundColor: 'white',
-    fontSize: 8,
-  },
-});
-
-
+    fontSize: 8
+  }
+})
 
 export {
   documentStyles,
   listStyles
-};
+}

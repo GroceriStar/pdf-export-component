@@ -1,4 +1,4 @@
-import { StyleSheet } from '@react-pdf/renderer';
+import { StyleSheet } from '@react-pdf/renderer'
 
 const styles = StyleSheet.create({
   page: {
@@ -9,8 +9,8 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     '@media max-width: 400': {
-      flexDirection: 'column',
-    },
+      flexDirection: 'column'
+    }
   },
   section: {
     margin: 10,
@@ -18,16 +18,16 @@ const styles = StyleSheet.create({
     flexGrow: 1
   },
   text: {
-    "font-size": "18px"
+    'font-size': '18px'
   },
   block: {
-      backgroundColor: 'red'
+    backgroundColor: 'red'
   },
   block1: {
-      backgroundColor: 'green',
-      border: '1 solid purple'
+    backgroundColor: 'green',
+    border: '1 solid purple'
   }
 
-});
+})
 
-export default styles;
+export default styles

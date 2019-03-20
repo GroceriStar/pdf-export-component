@@ -4,13 +4,11 @@ import resolve from 'rollup-plugin-node-resolve'
 import babel from 'rollup-plugin-babel'
 import pkg from './package.json'
 
-
 const extensions = [
   '.js'
 ]
 
 const name = 'ShoplistBlocksComponents'
-
 
 export default {
   input: './src/index.js',
@@ -38,9 +36,7 @@ export default {
       // exclude: 'node_modules/**'
       // presets: presets,
       // plugins: plugins
-    }),
-
-
+    })
 
     // just fix in order to move json files to npm
     // copy({
@@ -56,7 +52,7 @@ export default {
   }, {
     file: pkg.module,
     format: 'es'
-  },
+  }
   // {
   //   file: pkg.browser,
   //   format: 'iife',
@@ -65,5 +61,5 @@ export default {
   //   // https://rollupjs.org/guide/en#output-globals-g-globals
   //   globals: {}
   // }
-]
+  ]
 }

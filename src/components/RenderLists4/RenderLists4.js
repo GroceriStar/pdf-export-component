@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import { Text, View, StyleSheet } from '@react-pdf/renderer';
+import { Text, View, StyleSheet } from '@react-pdf/renderer'
 // import List, { Item } from './List';
 
 const RenderLists4 = ({ data }) => {
@@ -28,9 +28,7 @@ const RenderLists4 = ({ data }) => {
         {data.url}
       </Text>
     </View>
-  );
-
-
+  )
 }
 
-export default RenderLists4;
+export default RenderLists4

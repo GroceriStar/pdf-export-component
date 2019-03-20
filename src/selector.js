@@ -1,64 +1,60 @@
-import { groceristar, chickenKyiv } from "@groceristar/groceristar-fetch";
+import { groceristar, chickenKyiv } from '@groceristar/groceristar-fetch'
 
-//@TODO clean up this. we don't need of this methods.
-// i just copy-paste them quickly. 
+// @TODO clean up this. we don't need of this methods.
+// i just copy-paste them quickly.
 
-function getGroceryById( id ) {
-  return groceristar.getGroceryById(id);
+function getGroceryById (id) {
+  return groceristar.getGroceryById(id)
 }
 
-function getFullGrocery( name ) {
-  return groceristar.getGroceryByNameWithDepAndIng(name);
+function getFullGrocery (name) {
+  return groceristar.getGroceryByNameWithDepAndIng(name)
 }
 
-function getGroceryCollection(){
-  return groceristar.getGroceryShowcase();
+function getGroceryCollection () {
+  return groceristar.getGroceryShowcase()
 }
 
-function getAllGrocery(){
-  return groceristar.getAllGrocery();
+function getAllGrocery () {
+  return groceristar.getAllGrocery()
 }
 
-function getGroceryDataFromId(id){
-
-  console.log(getGroceryById(id));
-  let grocery     = getGroceryById(id)[0];
-  let groceryName = grocery.name;
-  let groceryWithDepAndIng = getFullGrocery(groceryName);
+function getGroceryDataFromId (id) {
+  console.log(getGroceryById(id))
+  let grocery = getGroceryById(id)[0]
+  let groceryName = grocery.name
+  let groceryWithDepAndIng = getFullGrocery(groceryName)
   return {
     'name': groceryName,
     'items': groceryWithDepAndIng
-  };
+  }
 }
 
+// ----------
 
-//----------
-
-function getRandomRecipe(){
+function getRandomRecipe () {
   return chickenKyiv.getRandomRecipe()
 }
 
-function getFirstFiveRecipes(){
-  return chickenKyiv.getFirstFiveRecipes();
+function getFirstFiveRecipes () {
+  return chickenKyiv.getFirstFiveRecipes()
 }
 
-
-function getShowcaseFiveRecipes(){
-  return chickenKyiv.getShowcaseFiveRecipes();
+function getShowcaseFiveRecipes () {
+  return chickenKyiv.getShowcaseFiveRecipes()
 }
 
-
-function getFiveRandomIngredients(){
-  return chickenKyiv.getFiveRandomIngredients();
+function getFiveRandomIngredients () {
+  return chickenKyiv.getFiveRandomIngredients()
 }
 
-//@TODO i don't like this name too
-function getRecipeChickenKyivById(id) {
-  return chickenKyiv.getRecipe()[id];
+// @TODO i don't like this name too
+function getRecipeChickenKyivById (id) {
+  return chickenKyiv.getRecipe()[id]
 }
 
-function getRecipes() {
-  return chickenKyiv.getRecipe();
+function getRecipes () {
+  return chickenKyiv.getRecipe()
 }
 
 export {
