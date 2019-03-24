@@ -8,11 +8,8 @@ import RenderList2 from '~/RenderLists2/RenderLists2'
 import RenderList3 from '~/RenderLists3/RenderLists3'
 import RenderList4 from '~/RenderLists4/RenderLists4'
 
-
 // @TODO it was an old version. as we want to make this components lighter - we need to find another way to do tests as we want them
 // import { getFullGrocery, getRecipes } from '/selector'
-
-
 
 // Setup enzyme's react adapter
 configure({ adapter: new EnzymeAdapter() })

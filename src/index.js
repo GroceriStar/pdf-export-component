@@ -5,11 +5,11 @@ import GeneratePDFButton from '~/GeneratePDFButton/GeneratePDFButton'
 
 import DocumentLayouts from '~/DocumentLayouts/DocumentLayouts'
 
-const extras = {
-
-  // DownloadPDFLink, // or disable export of it completely.
-
-}
+// const extras = {
+//
+//   // DownloadPDFLink, // or disable export of it completely.
+//
+// }
 
 export {
 
