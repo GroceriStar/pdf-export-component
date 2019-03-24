@@ -8,7 +8,11 @@ import RenderList2 from '~/RenderLists2/RenderLists2'
 import RenderList3 from '~/RenderLists3/RenderLists3'
 import RenderList4 from '~/RenderLists4/RenderLists4'
 
-import { getFullGrocery, getRecipes } from '/selector'
+
+// @TODO it was an old version. as we want to make this components lighter - we need to find another way to do tests as we want them
+// import { getFullGrocery, getRecipes } from '/selector'
+
+
 
 // Setup enzyme's react adapter
 configure({ adapter: new EnzymeAdapter() })
@@ -16,8 +20,8 @@ configure({ adapter: new EnzymeAdapter() })
 // @TODO move data to before section
 
 describe('Test RenderList attribute', () => {
-  const data = getFullGrocery('19 Gluten-Free Foods Shopping List')
-  const recipeData = getRecipes()[0]
+  // const data = getFullGrocery('19 Gluten-Free Foods Shopping List')
+  // const recipeData = getRecipes()[0]
 
   // @TODO replace a similar tests with a function
 

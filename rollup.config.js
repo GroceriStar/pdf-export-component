@@ -8,7 +8,7 @@ const extensions = [
   '.js'
 ]
 
-const name = 'ShoplistBlocksComponents'
+const name = 'PDFExportComponents'
 
 export default {
   input: './src/index.js',
