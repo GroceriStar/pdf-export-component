@@ -50,11 +50,15 @@ return (
 
 - [ ] Reinstall fetch as dev dependency
 - [ ] tests takes a lot of times
-```
+
 
 sandbox project https://github.com/GroceriStar/react-print-pdf
 
--->
+```
+
+
+
+
 
  - for creating build run 'yarn clean && yarn build'
  - tests, lint, coverage is not working at this moment
@@ -65,27 +69,6 @@ sandbox project https://github.com/GroceriStar/react-print-pdf
 
 
 <!---
-
-
-
-<p align="center">
-  <a href="https://travis-ci.org/eunikitin/modern-package-boilerplate">
-    <img src="https://travis-ci.org/eunikitin/modern-package-boilerplate.svg?branch=master" alt="Build Status">
-  </a>
-  <a href="https://coveralls.io/github/eunikitin/modern-package-boilerplate?branch=master">
-    <img src="https://coveralls.io/repos/github/eunikitin/modern-package-boilerplate/badge.svg?branch=master" alt="Coverage Status">
-  </a>
-  <a href="https://david-dm.org/eunikitin/modern-package-boilerplate">
-    <img src="https://david-dm.org/eunikitin/modern-package-boilerplate/status.svg" alt="dependencies Status">
-  </a>
-  <a href="https://david-dm.org/eunikitin/modern-package-boilerplate?type=dev">
-    <img src="https://david-dm.org/eunikitin/modern-package-boilerplate/dev-status.svg" alt="devDependencies Status">
-  </a>
-  <a href="https://david-dm.org/eunikitin/modern-package-boilerplate?type=peer">
-    <img src="https://david-dm.org/eunikitin/modern-package-boilerplate/peer-status.svg" alt="peerDependencies Status">
-  </a>
-</p>
-
 
 
 # Groceristar-fetch module
