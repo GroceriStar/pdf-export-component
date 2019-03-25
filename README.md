@@ -68,6 +68,8 @@ sandbox project https://github.com/GroceriStar/react-print-pdf
 - [ ] Create test coverage
 
 
+@babel/plugin-proposal-object-rest-spread
+
 <!---
 
 

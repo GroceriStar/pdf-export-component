@@ -1,7 +1,10 @@
-import commonjs from 'rollup-plugin-commonjs'
 import resolve from 'rollup-plugin-node-resolve'
-// import copy from 'rollup-plugin-copy-assets';
+import commonjs from 'rollup-plugin-commonjs'
 import babel from 'rollup-plugin-babel'
+// import copy from 'rollup-plugin-copy-assets';
+// import replace from 'rollup-plugin-replace'
+// import uglify from 'rollup-plugin-uglify'
+
 import pkg from './package.json'
 
 const extensions = [
@@ -33,8 +36,6 @@ export default {
     // Allows node_modules resolution
     resolve({ extensions }),
 
-    // Allow bundling cjs modules. Rollup doesn't understand cjs
-    commonjs(),
 
     // Compile TypeScript/JavaScript files
     babel({
@@ -48,7 +49,14 @@ export default {
       // exclude: 'node_modules/**'
       // presets: presets,
       // plugins: plugins
-    })
+    }),
+
+    // Allow bundling cjs modules. Rollup doesn't understand cjs
+    commonjs({
+      exclude: 'src/**',
+    }),
+
+
 
     // just fix in order to move json files to npm
     // copy({
@@ -75,3 +83,16 @@ export default {
   // }
   ]
 }
+
+// if (env === 'production') {
+// 	config.plugins.push(
+// 		uglify({
+// 			compress: {
+// 				pure_getters: true,
+// 				unsafe: true,
+// 				unsafe_comps: true,
+// 				warnings: false,
+// 			},
+// 		})
+// 	)
+// }
