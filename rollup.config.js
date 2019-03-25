@@ -8,7 +8,7 @@ import babel from 'rollup-plugin-babel'
 import pkg from './package.json'
 
 const extensions = [
-  '.js'
+  '.js', '.jsx'
 ]
 
 const name = 'PDFExportComponents'
@@ -16,6 +16,7 @@ const name = 'PDFExportComponents'
 export default {
   input: './src/index.js',
 
+  // All the used libs needs to be here
   // Specify here external modules which you don't want to include in your bundle (for instance: 'lodash', 'moment' etc.)
   // https://rollupjs.org/guide/en#external-e-external
   external: [
@@ -27,10 +28,10 @@ export default {
     '@react-pdf/renderer'
   ],
 
-  globals: {
-    react: 'React',
-    'react-dom': 'ReactDOM'
-  },
+  // globals: {
+  //   react: 'React',
+  //   'react-dom': 'ReactDOM'
+  // },
 
   plugins: [
     // Allows node_modules resolution
@@ -43,12 +44,8 @@ export default {
       include: ['src/*'],
       // include: ['src/**/*'],
       exclude: [
-        'node_modules/**',
-        '/src/data/__tests__'
+        'node_modules/**'
       ]
-      // exclude: 'node_modules/**'
-      // presets: presets,
-      // plugins: plugins
     }),
 
     // Allow bundling cjs modules. Rollup doesn't understand cjs
