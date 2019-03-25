@@ -23,9 +23,9 @@ export default {
     'react-dom',
     '@react-pdf/renderer'
   ],
-  
+
   globals: {
-    'react': 'React',
+    react: 'React',
     'react-dom': 'ReactDOM'
   },
 

@@ -15,6 +15,9 @@ const plugins = [
     require.resolve('@babel/plugin-proposal-class-properties')
   ],
   [
+    require.resolve('@babel/plugin-transform-react-jsx')
+  ],
+  [
     require.resolve('babel-plugin-module-resolver'),
     {
       root: ['./src/'],
