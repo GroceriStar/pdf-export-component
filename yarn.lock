@@ -734,6 +734,15 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@groceristar/pdf-export@^1.0.41":
+  version "1.0.41"
+  resolved "https://registry.yarnpkg.com/@groceristar/pdf-export/-/pdf-export-1.0.41.tgz#f710f8fbd95e953db74392ee34debc92001e823e"
+  integrity sha512-8mAYeBPZDJ8tWoLapblkMRYZm2cfhf2Dvj7IAVY5z1v3shDaaFSN0gC0RmfBUrYBWGdYdURTVUgPMAy/CS6QXw==
+  dependencies:
+    "@react-pdf/renderer" "^1.4.1"
+    antd "^3.15.0"
+    uuid "^3.3.2"
+
 "@jest/console@^24.3.0":
   version "24.3.0"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-24.3.0.tgz#7bd920d250988ba0bf1352c4493a48e1cb97671e"

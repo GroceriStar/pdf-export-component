@@ -4,11 +4,9 @@ import resolve from 'rollup-plugin-node-resolve'
 import babel from 'rollup-plugin-babel'
 import pkg from './package.json'
 
-const extensions = [
-  '.js'
-]
+const extensions = ['.js']
 
-const name = 'PDFExportComponents'
+// const name = 'PDFExportComponents'
 
 export default {
   input: './src/index.js',
@@ -29,10 +27,7 @@ export default {
       extensions,
       include: ['src/*'],
       // include: ['src/**/*'],
-      exclude: [
-        'node_modules/**',
-        '/src/data/__tests__'
-      ]
+      exclude: ['node_modules/**', '/src/data/__tests__']
       // exclude: 'node_modules/**'
       // presets: presets,
       // plugins: plugins
@@ -46,20 +41,22 @@ export default {
     // }),
   ],
 
-  output: [{
-    file: pkg.main,
-    format: 'cjs'
-  }, {
-    file: pkg.module,
-    format: 'es'
-  }
-  // {
-  //   file: pkg.browser,
-  //   format: 'iife',
-  //   name,
-  //
-  //   // https://rollupjs.org/guide/en#output-globals-g-globals
-  //   globals: {}
-  // }
+  output: [
+    {
+      file: pkg.main,
+      format: 'cjs'
+    },
+    {
+      file: pkg.module,
+      format: 'es'
+    }
+    // {
+    //   file: pkg.browser,
+    //   format: 'iife',
+    //   name,
+    //
+    //   // https://rollupjs.org/guide/en#output-globals-g-globals
+    //   globals: {}
+    // }
   ]
 }

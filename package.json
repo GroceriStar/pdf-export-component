@@ -52,6 +52,7 @@
     "access": "public"
   },
   "dependencies": {
+    "@groceristar/pdf-export": "^1.0.41",
     "@react-pdf/renderer": "^1.4.1",
     "antd": "^3.15.0",
     "uuid": "^3.3.2"

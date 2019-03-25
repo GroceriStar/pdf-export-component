@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Text, View, StyleSheet } from '@react-pdf/renderer'
+import { Text, View } from '@react-pdf/renderer'
 
 // this component important to generation PDF
 import { listStyles as styles } from './styles'
