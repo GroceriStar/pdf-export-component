@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 // Create styles
 
 import { Button } from 'antd'
@@ -19,11 +19,12 @@ class GeneratePDFButton extends React.Component {
       isHidden: !this.state.isHidden
     })
   }
-
+  // <div>
+  // </div>
   render () {
     const { type, name, data } = this.props
     return (
-      <div>
+      <Fragment>
         {this.state.isHidden &&
         <Button type='primary' icon='file-pdf' size='large'
           onClick={this.toggleHidden.bind(this)}>
@@ -35,7 +36,7 @@ class GeneratePDFButton extends React.Component {
         <DownloadPDFLink
           type={type} name={name} data={data} />
         }
-      </div>
+      </Fragment>
     )
   }
 }

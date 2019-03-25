@@ -15,7 +15,19 @@ export default {
 
   // Specify here external modules which you don't want to include in your bundle (for instance: 'lodash', 'moment' etc.)
   // https://rollupjs.org/guide/en#external-e-external
-  external: ['antd', 'lodash', 'uuid'],
+  external: [
+    'antd',
+    'lodash',
+    'uuid',
+    'react',
+    'react-dom',
+    '@react-pdf/renderer'
+  ],
+  
+  globals: {
+    'react': 'React',
+    'react-dom': 'ReactDOM'
+  },
 
   plugins: [
     // Allows node_modules resolution
