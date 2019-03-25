@@ -20,7 +20,7 @@ it should be something simple and better for it.
 example how i use list:
 
 
-<!--
+
 ```
 // this is an ingredient for list
 import React, { Component, Fragment } from 'react';
