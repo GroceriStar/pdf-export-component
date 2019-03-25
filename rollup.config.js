@@ -46,7 +46,7 @@ export default {
       exclude: [
         'node_modules/**'
       ]
-    }),
+1    }),
 
     // Allow bundling cjs modules. Rollup doesn't understand cjs
     commonjs({
@@ -61,6 +61,8 @@ export default {
     //     './src/data'
     //   ],
     // }),
+
+    // replace()
   ],
 
   output: [{
