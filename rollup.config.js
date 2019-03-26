@@ -28,10 +28,10 @@ export default {
     '@react-pdf/renderer'
   ],
 
-  // globals: {
-  //   react: 'React',
+  globals: {
+    react: 'React',
   //   'react-dom': 'ReactDOM'
-  // },
+  },
 
   plugins: [
     // Allows node_modules resolution
