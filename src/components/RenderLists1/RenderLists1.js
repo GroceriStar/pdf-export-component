@@ -15,6 +15,7 @@ const ListsWrapper = ({ department, ingredients }) => (
     </Text>
 
     <List>
+      {/* @TODO replace uuidv1 later*/}
       {ingredients.map((ingredient) => <Item key={uuidv1()}>{ingredient}</Item>)}
     </List>
   </View>
