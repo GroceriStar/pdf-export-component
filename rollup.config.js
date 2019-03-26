@@ -29,14 +29,13 @@ export default {
   ],
 
   globals: {
-    react: 'React',
+    react: 'React'
   //   'react-dom': 'ReactDOM'
   },
 
   plugins: [
     // Allows node_modules resolution
     resolve({ extensions }),
-
 
     // Compile TypeScript/JavaScript files
     babel({
@@ -50,10 +49,8 @@ export default {
 
     // Allow bundling cjs modules. Rollup doesn't understand cjs
     commonjs({
-      exclude: 'src/**',
-    }),
-
-
+      exclude: 'src/**'
+    })
 
     // just fix in order to move json files to npm
     // copy({
