@@ -4,7 +4,7 @@ const listStyles = StyleSheet.create({
   item: {
     flexDirection: 'row',
     marginBottom: 5,
-    'marginLeft': '25px'
+    marginLeft: '25px'
   },
   bulletPoint: {
     width: 10,

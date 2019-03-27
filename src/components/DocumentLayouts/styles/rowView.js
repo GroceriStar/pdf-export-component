@@ -7,18 +7,10 @@ const documentStyles = StyleSheet.create({
     borderRadius: 5,
     backgroundColor: '#45322E',
     color: 'white',
-    // borderBottomWidth: 5,
-    //   borderBottomColor: 'red',
-    // borderBottomStyle: "solid",
     padding: 4
-    // border: '1 solid black',
-    // borderWidth: 1,
-    // borderColor: 'black',
   },
   main: {
     marginTop: 10
-  // borderLeft: '1 solid black',
-  // borderRight: '1 solid black',
   }
 })
 
@@ -26,7 +18,7 @@ const listStyles = StyleSheet.create({
   item: {
     flexDirection: 'row',
     marginBottom: 5,
-    'marginLeft': '25px',
+    marginLeft: '25px',
     borderBottomWidth: 1,
     borderBottomColor: 'black'
   },
