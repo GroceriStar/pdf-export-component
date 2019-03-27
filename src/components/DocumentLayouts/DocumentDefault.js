@@ -8,8 +8,8 @@ import List, { Item } from './List'
 // @TODO move this selector away from this not a container like component.
 import { documentStyles as styles } from './styles'
 
-const ListsWrapper = ({ department, ingredients }) => (
-  <View>
+const ListsDepartment = ({ department, ingredients }) => (
+  <View style={styles.main}>
     <Text style={styles.title}>
       {department}
     </Text>
@@ -24,11 +24,10 @@ const ListsWrapper = ({ department, ingredients }) => (
 
 // @TODO this is a bad situation where we have a passing data as it is - we use names, not id at not a main container - component
 // and this will be hardly to catch later
-
 const RenderLists1 = ({ data }) => (
   <View>
-    {data.map(item => (
-      <ListsWrapper
+    {data && data.map(item => (
+      <ListsDepartment
         key={uuidv1()}
         department={item.department}
         ingredients={item.ingredients} />
@@ -36,7 +35,8 @@ const RenderLists1 = ({ data }) => (
   </View>
 )
 
-ListsWrapper.propTypes = {
+ListsDepartment.propTypes = {
+  // name: PropTypes.array, because getting an error expected array but receiving string
   department: PropTypes.string,
   ingredients: PropTypes.array
 }
