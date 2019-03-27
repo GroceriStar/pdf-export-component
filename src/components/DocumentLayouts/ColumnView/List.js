@@ -10,12 +10,10 @@ import { listStyles as styles } from './styles'
 const List = ({ children }) => children
 
 export const Item = ({ children }) => (
-  <View>
+  <View style={styles.blockItem}>
     <View style={[styles.knob]} />
     <View style={styles.item}>
-      <Text style={styles.itemContent}>
-        {children}
-      </Text>
+      <Text style={styles.itemContent}>{children}</Text>
     </View>
   </View>
 )

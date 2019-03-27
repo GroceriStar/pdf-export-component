@@ -9,22 +9,22 @@ import List, { Item } from './List'
 import { documentStyles as styles } from './styles'
 
 const ListsWrapper = ({ department, ingredients }) => (
-  <View>
+  <View style={styles.main}>
     <Text style={styles.title}>
       {department}
     </Text>
 
     <List>
       {/* @TODO replace uuidv1 later*/}
-      {ingredients.map((ingredient) => <Item key={uuidv1()}>{ingredient}</Item>)}
+      {ingredients.map((ingredient, num) =>
+        <Item key={uuidv1()}>{ingredient}</Item>)}
     </List>
   </View>
 )
 
 // @TODO this is a bad situation where we have a passing data as it is - we use names, not id at not a main container - component
 // and this will be hardly to catch later
-
-const RenderLists1 = ({ data }) => (
+const RenderLists2 = ({ data }) => (
   <View>
     {data.map(item => (
       <ListsWrapper
@@ -40,4 +40,4 @@ ListsWrapper.propTypes = {
   ingredients: PropTypes.array
 }
 
-export default RenderLists1
+export default RenderLists2

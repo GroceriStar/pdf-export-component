@@ -1,15 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Text, View, StyleSheet } from '@react-pdf/renderer'
+import { Text, View } from '@react-pdf/renderer'
 
-// this component important to generation PDF
 import { listStyles as styles } from './styles'
+
+// this component important to generation of PDF
 
 const List = ({ children }) => children
 
 export const Item = ({ children }) => (
-  <View style={styles.blockItem}>
+  <View>
     <View style={[styles.knob]} />
     <View style={styles.item}>
       <Text style={styles.itemContent}>{children}</Text>

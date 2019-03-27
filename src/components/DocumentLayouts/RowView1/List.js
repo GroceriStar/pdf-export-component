@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 
 import { Text, View } from '@react-pdf/renderer'
 
-// this component important to generation PDF
-
 import { listStyles as styles } from './styles'
+
+// this component important to generation of PDF
 
 const List = ({ children }) => children
 
