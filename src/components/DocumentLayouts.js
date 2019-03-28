@@ -8,9 +8,13 @@ import {
 } from '@react-pdf/renderer'
 
 // @TODO i don't like this approach, but it looks simple for now
-import LayoutMain from './LayoutTypes/LayoutMain'
 
-import styles from './styles'
+import MainLayout from './LayoutTypes/MainLayout'
+
+// import styles from './styles'
+import BulletListStyles from './LayoutStyles/BulletList'
+import RowViewStyles from './LayoutStyles/RowViewStyles'
+import ColumnViewStyles from './LayoutStyles/ColumnView'
 
 // @TODO move away switch into a separated function
 
@@ -19,23 +23,19 @@ const DocumentLayouts = (type, documentTitle, data) => {
 
   switch (type) {
     case 'PDF1':
-      layout = <RenderLists1 data={data} />
+      layout = <MainLayout styles={BulletListStyles} data={data} />
       break
 
     case 'PDF2':
-      layout = <RenderLists2 data={data} />
+      layout = <MainLayout styles={RowViewStyles} data={data} />
       break
 
     case 'PDF3':
-      layout = <RenderLists3 data={data} />
-      break
-
-    case 'PDF4':
-      layout = <RenderLists4 data={data} />
+      layout = <MainLayout styles={ColumnViewStyles} data={data} />
       break
 
     default:
-      layout = <RenderLists1 data={data} />
+      layout = <MainLayout styles={BulletListStyles} data={data} />
       break
   }
 
