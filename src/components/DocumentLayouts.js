@@ -34,6 +34,10 @@ const DocumentLayouts = (type, documentTitle, data) => {
       layout = <MainLayout styles={ColumnViewStyles} data={data} />
       break
 
+    case 'PDF3':
+      layout = <MainLayout styles={ColumnViewStyles} data={data} />
+      break
+
     default:
       layout = <MainLayout styles={BulletListStyles} data={data} />
       break
