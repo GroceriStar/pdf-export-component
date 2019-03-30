@@ -79,7 +79,4 @@ describe('Test RenderList attribute', () => {
 //   })
 // })
 
-
-
-
 // here we'll have an example about checking what is inside of our Render List components
