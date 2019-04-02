@@ -13,36 +13,34 @@ import MainLayout from './LayoutTypes/MainLayout'
 
 // import styles from './styles'
 
-// import BulletListStyles from './LayoutStyles/BulletList'
-// import RowViewStyles from './LayoutStyles/RowViewStyles'
-// import ColumnViewStyles from './LayoutStyles/ColumnView'
+import BulletListStyles from './LayoutTypes/LayoutStyles/BulletList'
+import RowViewStyles from './LayoutTypes/LayoutStyles/RowView'
+import ColumnViewStyles from './LayoutTypes/LayoutStyles/ColumnView'
 
-import { BulletList, ColumnView, RowView } from './LayoutTypes/LayoutStyles'
 
 // @TODO move away switch into a separated function
 
-const DocumentLayouts = (type, documentTitle, data) => {
-    let layout
-
+const SelectMainLayout = (type, data) => {
     switch (type) {
         case 'PDF1':
-            layout = <MainLayout style={BulletList} data={data} />
+            return <MainLayout styles={BulletListStyles} data={data} />
             break
 
         case 'PDF2':
-            layout = <MainLayout style={RowView} data={data} />
+            return <MainLayout styles={RowViewStyles} data={data} />
             break
 
         case 'PDF3':
-            layout = <MainLayout style={ColumnView} data={data} />
+            return <MainLayout styles={ColumnViewStyles} data={data} />
             break
 
         default:
-            layout = <MainLayout style={BulletList} data={data} />
+            return <MainLayout styles={BulletListStyles} data={data} />
             break
     }
+}
 
-
+const DocumentLayouts = (type, documentTitle, data) => {
     return (
         <Document>
             <Page size='A4' style={styles.page} wrap>
@@ -50,7 +48,7 @@ const DocumentLayouts = (type, documentTitle, data) => {
                     <Text style={styles.text}>
                         {documentTitle}
                     </Text>
-                    {layout}
+                    {SelectMainLayout(type, data)}
                 </View>
             </Page>
         </Document>
