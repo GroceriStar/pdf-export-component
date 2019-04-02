@@ -12,20 +12,36 @@ import {
 import MainLayout from './LayoutTypes/MainLayout'
 
 // import styles from './styles'
-import { BulletList as BulletListStyles, ColumnView as ColumnViewStyles, RowView as RowViewStyles } from './LayoutTypes/LayoutStyles'
-//import BulletListStyles from './LayoutStyles/BulletList'
-//import RowViewStyles from './LayoutStyles/RowViewStyles'
-//import ColumnViewStyles from './LayoutStyles/ColumnView'
+
+// import BulletListStyles from './LayoutStyles/BulletList'
+// import RowViewStyles from './LayoutStyles/RowViewStyles'
+// import ColumnViewStyles from './LayoutStyles/ColumnView'
+
+import { BulletList, ColumnView, RowView } from './LayoutTypes/LayoutStyles'
 
 // @TODO move away switch into a separated function
 
 const DocumentLayouts = (type, documentTitle, data) => {
     let layout
 
-    type === 'PDF1' ? layout = <MainLayout styles={BulletListStyles} data={data} /> :
-        type === 'PDF2' ? layout = <MainLayout styles={RowViewStyles} data={data} /> :
-            type === 'PDF3' ? layout = <MainLayout styles={ColumnViewStyles} data={data} /> :
-                layout = <MainLayout styles={BulletListStyles} data={data} />
+    switch (type) {
+        case 'PDF1':
+            layout = <MainLayout style={BulletList} data={data} />
+            break
+
+        case 'PDF2':
+            layout = <MainLayout style={RowView} data={data} />
+            break
+
+        case 'PDF3':
+            layout = <MainLayout style={ColumnView} data={data} />
+            break
+
+        default:
+            layout = <MainLayout style={BulletList} data={data} />
+            break
+    }
+
 
     return (
         <Document>
