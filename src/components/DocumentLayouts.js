@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import {
   Text,
@@ -20,7 +20,9 @@ import ColumnViewStyles from './LayoutStyles/ColumnView'
 
 const PDF1Type = (BulletListStyles, data) => {
   return (
-    <MainLayout styles={BulletListStyles} data={data} />
+    <Fragment>
+      <MainLayout styles={BulletListStyles} data={data} />
+    </Fragment>
   )
 }
 
@@ -30,36 +32,46 @@ const PDF2Type = (RowViewStyles, data) => {
   )
 }
 
-const
+const PDF3Type = (ColumnViewStyles, data) => {
+  return (
+    <MainLayout styles={ColumnViewStyles} data={data} />
+  )
+}
+
+const PDF4Type = () => {
+  return (
+    <MainLayout styles={BulletListStyles} data={data} />
+  )
+}
 
 
 //@TODO where is our 4th case? related to displaying recipes
 
-const SwitchTypes = () => {
+const SwitchTypes = (type, data) => {
   let layout
 
   switch (type) {
     case 'PDF1':
-      layout = <MainLayout styles={BulletListStyles} data={data} />
-
+      layout = PDF1Type(BulletListStyles, data)
       break
 
     case 'PDF2':
-      layout = <MainLayout styles={RowViewStyles} data={data} />
+      layout = PDF2Type(RowViewStyles, data)
       break
 
     case 'PDF3':
-      layout = <MainLayout styles={ColumnViewStyles} data={data} />
+      layout = PDF3Type(ColumnViewStyles, data)
       break
 
     default:
-      layout = <MainLayout styles={BulletListStyles} data={data} />
+      layout = PDF1Type(BulletListStyles, data)
       break
   }
+
+  return layout;
 }
 
 const DocumentLayouts = (type, documentTitle, data) => {
-
 
   return (
     <Document>
@@ -68,7 +80,7 @@ const DocumentLayouts = (type, documentTitle, data) => {
           <Text style={styles.text}>
             {documentTitle}
           </Text>
-          {layout}
+          {SwitchTypes(type, data)}
         </View>
       </Page>
     </Document>

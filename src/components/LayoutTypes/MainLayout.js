@@ -24,7 +24,8 @@ const ListsDepartment = ({ department, ingredients }) => (
 
 // @TODO this is a bad situation where we have a passing data as it is - we use names, not id at not a main container - component
 // and this will be hardly to catch later
-const RenderLists1 = ({ data }) => (
+// it was a RenderList1 before
+const MainLayout = ({ data }) => (
   <View>
     {data && data.map(item => (
       <ListsDepartment
