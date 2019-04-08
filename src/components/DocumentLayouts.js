@@ -18,20 +18,34 @@ import ColumnViewStyles from './LayoutStyles/ColumnView'
 
 // @TODO move away switch into a separated function
 
+const PDF1Type = (BulletListStyles, data) => {
+  return (
+    <MainLayout styles={BulletListStyles} data={data} />
+  )
+}
+
+const PDF2Type = (RowViewStyles, data) => {
+  return (
+    <MainLayout styles={RowViewStyles} data={data} />
+  )
+}
+
+const
+
+
+//@TODO where is our 4th case? related to displaying recipes
+
 const SwitchTypes = () => {
   let layout
 
   switch (type) {
     case 'PDF1':
       layout = <MainLayout styles={BulletListStyles} data={data} />
+
       break
 
     case 'PDF2':
       layout = <MainLayout styles={RowViewStyles} data={data} />
-      break
-
-    case 'PDF3':
-      layout = <MainLayout styles={ColumnViewStyles} data={data} />
       break
 
     case 'PDF3':
