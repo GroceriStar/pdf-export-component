@@ -18,7 +18,7 @@ import ColumnViewStyles from './LayoutStyles/ColumnView'
 
 // @TODO move away switch into a separated function
 
-const DocumentLayouts = (type, documentTitle, data) => {
+const SwitchTypes = () => {
   let layout
 
   switch (type) {
@@ -42,6 +42,10 @@ const DocumentLayouts = (type, documentTitle, data) => {
       layout = <MainLayout styles={BulletListStyles} data={data} />
       break
   }
+}
+
+const DocumentLayouts = (type, documentTitle, data) => {
+
 
   return (
     <Document>

@@ -26,6 +26,15 @@ const plugins = [
   ],
   [
     require.resolve('@babel/plugin-syntax-dynamic-import')
+  ],
+  [
+    require.resolve('@babel/plugin-transform-react-jsx')
+  ],
+  [
+    require.resolve('@babel/plugin-transform-react-jsx-compat')
+  ],
+  [
+    require.resolve('@babel/plugin-transform-react-jsx-self')
   ]
 ]
 
