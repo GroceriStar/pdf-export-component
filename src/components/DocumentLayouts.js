@@ -8,10 +8,10 @@ import {
 } from '@react-pdf/renderer'
 
 // @TODO i don't like this approach, but it looks simple for now
-import RenderLists1 from '~/RenderLists1/RenderLists1'
-import RenderLists2 from '~/RenderLists2/RenderLists2'
-import RenderLists3 from '~/RenderLists3/RenderLists3'
-import RenderLists4 from '~/RenderLists4/RenderLists4'
+import ColumnList from '~/DocumentDesigns/ColumnList'
+import RowList from '~/DocumentDesigns/RowList'
+import RowList1 from '~/DocumentDesigns/RowList1'
+import StandaloneRecipe from '~/DocumentDesigns/StandaloneRecipe'
 
 import styles from './styles'
 
@@ -22,23 +22,23 @@ const DocumentLayouts = (type, documentTitle, data) => {
 
   switch (type) {
     case 'PDF1':
-      layout = <RenderLists1 data={data} />
+      layout = <ColumnList data={data} />
       break
 
     case 'PDF2':
-      layout = <RenderLists2 data={data} />
+      layout = <RowList data={data} />
       break
 
     case 'PDF3':
-      layout = <RenderLists3 data={data} />
+      layout = <RowList1 data={data} />
       break
 
     case 'PDF4':
-      layout = <RenderLists4 data={data} />
+      layout = <StandaloneRecipe data={data} />
       break
 
     default:
-      layout = <RenderLists1 data={data} />
+      layout = <ColumnList data={data} />
       break
   }
 
