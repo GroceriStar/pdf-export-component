@@ -12,6 +12,30 @@ const extensions = [
 ]
 
 const name = 'PDFExportComponents'
+// https://github.com/rollup/rollup/issues/2646
+
+const { external, globals } = {
+
+  "globals": {
+    "react": "React",
+    "react-dom": "ReactDom",
+    "react-router-dom": "react-router-dom",
+    'antd': 'antd'
+    'lodash': 'lodash',
+    'uuid':'uuid',
+    'react-image':'react-image',
+    '@react-pdf/renderer',
+  },
+  "external": [
+    'antd',
+    'lodash',
+    'uuid',
+    'react-image',
+    '@react-pdf/renderer',
+    'react',
+    'react-dom'
+  ]
+};
 
 export default {
   input: './src/index.js',
@@ -19,19 +43,10 @@ export default {
   // All the used libs needs to be here
   // Specify here external modules which you don't want to include in your bundle (for instance: 'lodash', 'moment' etc.)
   // https://rollupjs.org/guide/en#external-e-external
-  external: [
-    'antd',
-    'lodash',
-    'uuid',
-    'react',
-    'react-dom',
-    '@react-pdf/renderer'
-  ],
+  external,
 
-  globals: {
-    react: 'React'
-  //   'react-dom': 'ReactDOM'
-  },
+  globals,
+
 
   plugins: [
     // Allows node_modules resolution
