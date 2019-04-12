@@ -19,17 +19,16 @@ class GeneratePDFButton extends React.Component {
       isHidden: !this.state.isHidden
     })
   }
-  // <div>
-  // </div>
-  render () {
-    const { type, name, data } = this.props
+
+  render() {
+    const { type, name, data } = this.props;
     return (
       <Fragment>
         {this.state.isHidden &&
-        <Button type='primary' icon='file-pdf' size='large'
-          onClick={this.toggleHidden.bind(this)}>
-              Generate PDF file
-        </Button>
+          <Button type='primary' icon='file-pdf' size='large'
+            onClick={this.toggleHidden.bind(this)}>
+                Generate PDF file
+          </Button>
         }
 
         {!this.state.isHidden &&
