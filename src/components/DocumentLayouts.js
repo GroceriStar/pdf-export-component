@@ -7,8 +7,6 @@ import {
   Document
 } from '@react-pdf/renderer'
 
-// @TODO i don't like this approach, but it looks simple for now
-
 import MainLayout from './LayoutTypes/MainLayout'
 
 // import styles from './styles'
