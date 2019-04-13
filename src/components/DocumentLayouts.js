@@ -36,11 +36,11 @@ const PDF3Type = (ColumnViewStyles, data) => {
   )
 }
 
-const PDF4Type = () => {
-  return (
-    <MainLayout styles={BulletListStyles} data={data} />
-  )
-}
+// const PDF4Type = () => {
+//   return (
+//     <MainLayout styles={BulletListStyles} data={data} />
+//   )
+// }
 
 
 //@TODO where is our 4th case? related to displaying recipes
