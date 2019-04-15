@@ -9,7 +9,6 @@ import {
 
 import MainLayout from './Layouts/MainLayout'
 
-// import styles from './styles'
 import BulletListStyles from './Layouts/LayoutStyles/BulletList'
 import RowViewStyles from './Layouts/LayoutStyles/RowView'
 import ColumnViewStyles from './Layouts/LayoutStyles/ColumnView'
