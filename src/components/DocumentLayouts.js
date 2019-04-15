@@ -7,12 +7,12 @@ import {
   Document
 } from '@react-pdf/renderer'
 
-import MainLayout from './LayoutTypes/MainLayout'
+import MainLayout from './Layouts/MainLayout'
 
 // import styles from './styles'
-import BulletListStyles from './LayoutStyles/BulletList'
-import RowViewStyles from './LayoutStyles/RowViewStyles'
-import ColumnViewStyles from './LayoutStyles/ColumnView'
+import BulletListStyles from './Layouts/LayoutStyles/BulletList'
+import RowViewStyles from './Layouts/LayoutStyles/RowView'
+import ColumnViewStyles from './Layouts/LayoutStyles/ColumnView'
 
 // @TODO move away switch into a separated function
 
@@ -35,15 +35,6 @@ const PDF3Type = (ColumnViewStyles, data) => {
     <MainLayout styles={ColumnViewStyles} data={data} />
   )
 }
-
-const PDF4Type = () => {
-  return (
-    <MainLayout styles={BulletListStyles} data={data} />
-  )
-}
-
-
-//@TODO where is our 4th case? related to displaying recipes
 
 const SwitchTypes = (type, data) => {
   let layout
