@@ -18,20 +18,20 @@ import ColumnViewStyles from './Layouts/LayoutStyles/ColumnView'
 const PDF1Type = (BulletListStyles, data) => {
   return (
     <Fragment>
-      <MainLayout styles={BulletListStyles} data={data} />
+      <MainLayout style={BulletListStyles} data={data} />
     </Fragment>
   )
 }
 
 const PDF2Type = (RowViewStyles, data) => {
   return (
-    <MainLayout styles={RowViewStyles} data={data} />
+    <MainLayout style={RowViewStyles} data={data} />
   )
 }
 
 const PDF3Type = (ColumnViewStyles, data) => {
   return (
-    <MainLayout styles={ColumnViewStyles} data={data} />
+    <MainLayout style={ColumnViewStyles} data={data} />
   )
 }
 

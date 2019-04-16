@@ -8,7 +8,7 @@ import List, { Item } from './LayoutItem/LayoutItem'
 // @TODO move this selector away from this not a container like component.
 // import { documentStyles as styles } from './styles'
 
-const ListsDepartment = ({ department, ingredients }) => (
+const ListsDepartment = ({ department, ingredients, styles }) => (
   <View style={styles.main}>
     <Text style={styles.title}>
       {department}
@@ -25,10 +25,13 @@ const ListsDepartment = ({ department, ingredients }) => (
 // @TODO this is a bad situation where we have a passing data as it is - we use names, not id at not a main container - component
 // and this will be hardly to catch later
 // it was a RenderList1 before
-const MainLayout = ({ data }) => (
+
+// @TODO From DocumentLayouts we passing styles for child elements, it's incorrect
+const MainLayout = ({ data, styles }) => (
   <View>
     {data && data.map(item => (
       <ListsDepartment
+        styles={styles}
         key={uuidv1()}
         department={item.department}
         ingredients={item.ingredients} />
@@ -39,7 +42,7 @@ const MainLayout = ({ data }) => (
 ListsDepartment.propTypes = {
   // name: PropTypes.array, because getting an error expected array but receiving string
   department: PropTypes.string,
-  ingredients: PropTypes.array
+  ingredients: PropTypes.array,
 }
 
 export default MainLayout
