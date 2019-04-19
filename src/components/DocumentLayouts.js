@@ -9,29 +9,29 @@ import {
 
 import MainLayout from './Layouts/MainLayout'
 
-import BulletListStyles from './Layouts/LayoutStyles/BulletList'
-import RowViewStyles from './Layouts/LayoutStyles/RowView'
-import ColumnViewStyles from './Layouts/LayoutStyles/ColumnView'
+// import BulletListStyles from './Layouts/LayoutStyles/BulletList'
+// import RowViewStyles from './Layouts/LayoutStyles/RowView'
+// import ColumnViewStyles from './Layouts/LayoutStyles/ColumnView'
 
 // @TODO move away switch into a separated function
+//
+// const PDF1Type = (BulletListStyles, data) => {
+//   return (
+//     <Fragment>
+//       <MainLayout style={BulletListStyles} data={data} />
+//     </Fragment>
+//   )
+// }
+//
+// const PDF2Type = (RowViewStyles, data) => {
+//   return (
+//     <MainLayout style={RowViewStyles} data={data} />
+//   )
+// }
 
-const PDF1Type = (BulletListStyles, data) => {
+const PDFType = data => {
   return (
-    <Fragment>
-      <MainLayout style={BulletListStyles} data={data} />
-    </Fragment>
-  )
-}
-
-const PDF2Type = (RowViewStyles, data) => {
-  return (
-    <MainLayout style={RowViewStyles} data={data} />
-  )
-}
-
-const PDF3Type = (ColumnViewStyles, data) => {
-  return (
-    <MainLayout style={ColumnViewStyles} data={data} />
+    <MainLayout data={data} />
   )
 }
 
@@ -40,19 +40,19 @@ const SwitchTypes = (type, data) => {
 
   switch (type) {
     case 'PDF1':
-      layout = PDF1Type(BulletListStyles, data)
+      layout = PDFType(data)
       break
 
     case 'PDF2':
-      layout = PDF2Type(RowViewStyles, data)
+      layout = PDFType(data)
       break
 
     case 'PDF3':
-      layout = PDF3Type(ColumnViewStyles, data)
+      layout = PDFType(data)
       break
 
     default:
-      layout = PDF1Type(BulletListStyles, data)
+      layout = PDFType(data)
       break
   }
 
