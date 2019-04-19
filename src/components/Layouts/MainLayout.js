@@ -5,6 +5,10 @@ import uuidv1 from 'uuid/v1'
 import { Text, View } from '@react-pdf/renderer'
 import List, { Item } from './LayoutItem/LayoutItem'
 
+import BulletListStyles from './LayoutStyles/BulletList'
+import RowViewStyles from './LayoutStyles/RowView'
+import ColumnViewStyles from './LayoutStyles/ColumnView'
+
 // @TODO move this selector away from this not a container like component.
 // import { documentStyles as styles } from './styles'
 
@@ -26,18 +30,40 @@ const ListsDepartment = ({ department, ingredients, styles }) => (
 // and this will be hardly to catch later
 // it was a RenderList1 before
 
-// @TODO From DocumentLayouts we passing styles for child elements, it's incorrect
-const MainLayout = ({ data, styles }) => (
-  <View>
-    {data && data.map(item => (
-      <ListsDepartment
-        styles={styles}
-        key={uuidv1()}
-        department={item.department}
-        ingredients={item.ingredients} />
-    ))}
-  </View>
-)
+const MainLayout = ({type, data }) => {
+
+  let styles;
+
+  switch (type) {
+    case 'PDF1':
+      styles = BulletListStyles
+      break
+
+    case 'PDF2':
+      styles = RowViewStyles
+      break
+
+    case 'PDF3':
+      styles = ColumnViewStyles
+      break
+
+    default:
+      styles = BulletListStyles
+      break
+  }
+
+  return (
+    <View>
+      {data && data.map(item => (
+        <ListsDepartment
+          styles={styles}
+          key={uuidv1()}
+          department={item.department}
+          ingredients={item.ingredients} />
+      ))}
+    </View>
+  )
+}
 
 ListsDepartment.propTypes = {
   // name: PropTypes.array, because getting an error expected array but receiving string
