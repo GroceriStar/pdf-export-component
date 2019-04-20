@@ -7,7 +7,7 @@ import { Button } from 'antd'
 
 import { DocumentLayouts } from '/index'
 
-// import RenderLists from '../RenderLists/RenderLists';
+
 
 // @TODO rename this component name.
 // because it's quite similar to component from @react-pdf - see above
