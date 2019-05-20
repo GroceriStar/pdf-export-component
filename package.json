@@ -37,7 +37,7 @@
     "babel-plugin-module-resolver": "3.2.0",
     "coveralls": "3.0.3",
     "enzyme": "3.9.0",
-    "enzyme-adapter-react-16": "1.13.0",
+    "enzyme-adapter-react-16": "1.13.1",
     "jest": "24.8.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
