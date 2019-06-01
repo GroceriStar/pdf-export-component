@@ -10,7 +10,6 @@ import {
 import MainLayout from './Layouts/MainLayout'
 
 const DocumentLayouts = (type, documentTitle, data) => {
-
   return (
     <Document>
       <Page size='A4' style={styles.page} wrap>

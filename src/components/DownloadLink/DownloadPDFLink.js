@@ -7,8 +7,6 @@ import { Button } from 'antd'
 
 import { DocumentLayouts } from '/index'
 
-
-
 // @TODO rename this component name.
 // because it's quite similar to component from @react-pdf - see above
 // Maybe WrapperPDFDownloadLink is a long, but self exlpanatory name?

@@ -9,9 +9,8 @@ import DepartmentLists from 'LayoutItem/DepartmentLists'
 // and this will be hardly to catch later
 // it was a RenderList1 before
 
-const MainLayout = ({type, data }) => {
-
-  let styles;
+const MainLayout = ({ type, data }) => {
+  let styles
 
   switch (type) {
     case 'PDF1':
@@ -47,7 +46,7 @@ const MainLayout = ({type, data }) => {
 ListsDepartment.propTypes = {
   // name: PropTypes.array, because getting an error expected array but receiving string
   department: PropTypes.string,
-  ingredients: PropTypes.array,
+  ingredients: PropTypes.array
 }
 
 export default MainLayout

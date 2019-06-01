@@ -20,8 +20,8 @@ class GeneratePDFButton extends React.Component {
     })
   }
 
-  render() {
-    const { type, name, data } = this.props;
+  render () {
+    const { type, name, data } = this.props
     return (
       <Fragment>
         {this.state.isHidden &&

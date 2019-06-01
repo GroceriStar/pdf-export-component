@@ -15,7 +15,7 @@
     "#prepare": "yarn clean",
     "clean": "shx rm -rf ./coverage && shx rm -rf ./dist",
     "lint": "standard",
-    "zprepublish": "yarn clean && yarn build",
+    "prepublish": "yarn clean && yarn build",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cover": "jest --coverage",
