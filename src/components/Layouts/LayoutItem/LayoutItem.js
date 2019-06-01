@@ -9,7 +9,7 @@ import { Text, View } from '@react-pdf/renderer'
 
 const List = ({ children }) => children
 
-export const Item = ({ children }) => (
+export const Item = ({ children, styles }) => (
   <View>
     <View style={[styles.knob]} />
     <View style={styles.item}>
