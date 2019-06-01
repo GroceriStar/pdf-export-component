@@ -1,6 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Enzyme, { configure, shallow, mount } from 'enzyme'
+/* globals describe */
+
+// import React from 'react'
+// import ReactDOM from 'react-dom'
+// import Enzyme, { configure, shallow, mount } from 'enzyme'
+import { configure } from 'enzyme'
 import EnzymeAdapter from 'enzyme-adapter-react-16'
 
 // import RenderList1 from '~/RenderLists1/RenderLists1'
