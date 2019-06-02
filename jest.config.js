@@ -8,5 +8,5 @@ module.exports = {
   testPathIgnorePatterns: [
     '/lib/'
   ],
-  moduleDirectories: ['node_modules']
+  moduleDirectories: ['node_modules', 'dist']
 }

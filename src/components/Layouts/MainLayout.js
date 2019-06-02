@@ -5,13 +5,16 @@ import uuidv1 from 'uuid/v1'
 import { View } from '@react-pdf/renderer'
 import DepartmentLists from 'LayoutItem/DepartmentLists'
 
+import BulletListStyles from './LayoutStyles/BulletList'
+import ColumnViewStyles from './LayoutStyles/ColumnView'
+import RowViewStyles from './LayoutStyles/RowView'
+
 // @TODO this is a bad situation where we have a passing data as it is - we use names, not id at not a main container - component
 // and this will be hardly to catch later
 // it was a RenderList1 before
 
-const MainLayout = ({type, data }) => {
-
-  let styles;
+const MainLayout = ({ type, data }) => {
+  let styles
 
   switch (type) {
     case 'PDF1':
@@ -44,10 +47,10 @@ const MainLayout = ({type, data }) => {
   )
 }
 
-ListsDepartment.propTypes = {
+MainLayout.propTypes = {
   // name: PropTypes.array, because getting an error expected array but receiving string
   department: PropTypes.string,
-  ingredients: PropTypes.array,
+  ingredients: PropTypes.array
 }
 
 export default MainLayout

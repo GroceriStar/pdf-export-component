@@ -9,11 +9,11 @@ import { Text, View } from '@react-pdf/renderer'
 
 const List = ({ children }) => children
 
-export const Item = ({ children }) => (
+export const Item = ({ data, styles }) => (
   <View>
     <View style={[styles.knob]} />
     <View style={styles.item}>
-      <Text style={styles.itemContent}>{children}</Text>
+      <Text style={styles.itemContent}>{data}</Text>
     </View>
   </View>
 )
@@ -23,7 +23,7 @@ List.propTypes = {
 }
 
 Item.propTypes = {
-  children: PropTypes.node
+  data: PropTypes.node
 }
 
 export default List

@@ -1,12 +1,15 @@
+/* globals describe, it, expect */
+
 import React from 'react'
-import ReactDOM from 'react-dom'
-import Enzyme, { configure, shallow, mount } from 'enzyme'
+// import ReactDOM from 'react-dom'
+import {
+  configure,
+  // shallow,
+  mount
+} from 'enzyme'
 import EnzymeAdapter from 'enzyme-adapter-react-16'
 
-// import RenderList1 from '~/RenderLists1/RenderLists1'
-// import RenderList2 from '~/RenderLists2/RenderLists2'
-// import RenderList3 from '~/RenderLists3/RenderLists3'
-// import RenderList4 from '~/RenderLists4/RenderLists4'
+import Item from './Layouts/LayoutItem/LayoutItem'
 
 // @TODO it was an old version. as we want to make this components lighter - we need to find another way to do tests as we want them
 // import { getFullGrocery, getRecipes } from '/selector'
@@ -19,6 +22,10 @@ configure({ adapter: new EnzymeAdapter() })
 describe('Test RenderList attribute', () => {
   // const data = getFullGrocery('19 Gluten-Free Foods Shopping List')
   // const recipeData = getRecipes()[0]
+  const data = {
+    'John Doe': 'John Doe',
+    'Recipe': 'Recipe'
+  }
 
   // @TODO replace a similar tests with a function
 
@@ -27,16 +34,14 @@ describe('Test RenderList attribute', () => {
   // console.log(wrapper.prop('data'))
   // expect(wrapper.prop('data')).isEmpty(false)
 
-  // it('Renderlist1 has data attribute', () => {
-  //
-  //   // (typeof A === "object") && (A !== null)
-  //
-  //   const wrapper = mount(<RenderList1 data={data} />);
-  //   // const prop = wrapper.props().data;
-  //   // console.log(prop);
-  //   expect(wrapper.prop('data').isEmpty()).to.equal(false)
-  //   // expect(wrapper.props().data).toEqual(expect.any(Object))
-  // })
+  it('Renderlist1 has data attribute', () => {
+    // (typeof A === "object") && (A !== null)
+    const wrapper = mount(<Item data={data} />)
+    // const prop = wrapper.props().data;
+    // console.log(prop);
+    expect(wrapper.prop('data').isEmpty()).to.equal(false)
+    // expect(wrapper.props().data).toEqual(expect.any(Object))
+  })
 
   // it('Renderlist2 has data attribute', () => {
   //   const renderList = shallow(<RenderList2 data={data} />);

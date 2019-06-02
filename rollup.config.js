@@ -11,31 +11,28 @@ const extensions = [
   '.js', '.jsx'
 ]
 
-const name = 'PDFExportComponents'
+// const name = 'PDFExportComponents'
 // https://github.com/rollup/rollup/issues/2646
 
-const { external, globals } = {
-
-  "globals": {
-    "react": "React",
-    "react-dom": "ReactDom",
-    "react-router-dom": "react-router-dom",
-    'antd': 'antd'
-    'lodash': 'lodash',
-    'uuid':'uuid',
-    'react-image':'react-image',
-    '@react-pdf/renderer',
-  },
-  "external": [
-    'antd',
-    'lodash',
-    'uuid',
-    'react-image',
-    '@react-pdf/renderer',
-    'react',
-    'react-dom'
-  ]
-};
+const external = [
+  'antd',
+  'lodash',
+  'uuid',
+  'react-image',
+  '@react-pdf/renderer',
+  'react',
+  'react-dom'
+]
+const globals = {
+  'react': 'React',
+  'react-dom': 'ReactDom',
+  'react-router-dom': 'react-router-dom',
+  'antd': 'antd',
+  'lodash': 'lodash',
+  'uuid': 'uuid',
+  'react-image': 'react-image',
+  '@react-pdf/renderer': '@react-pdf/renderer'
+}
 
 export default {
   input: './src/index.js',
@@ -44,9 +41,7 @@ export default {
   // Specify here external modules which you don't want to include in your bundle (for instance: 'lodash', 'moment' etc.)
   // https://rollupjs.org/guide/en#external-e-external
   external,
-
   globals,
-
 
   plugins: [
     // Allows node_modules resolution
@@ -96,14 +91,14 @@ export default {
 }
 
 // if (env === 'production') {
-// 	config.plugins.push(
-// 		uglify({
-// 			compress: {
-// 				pure_getters: true,
-// 				unsafe: true,
-// 				unsafe_comps: true,
-// 				warnings: false,
-// 			},
-// 		})
-// 	)
+//   config.plugins.push(
+//     uglify({
+//       compress: {
+//         pure_getters: true,
+//         unsafe: true,
+//         unsafe_comps: true,
+//         warnings: false
+//       }
+//     })
+//   )
 // }

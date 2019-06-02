@@ -1,6 +1,6 @@
 'use strict'
 
-const path = require('path')
+// const path = require('path')
 // { "modules": false }
 const presets = [
   '@babel/preset-env',
@@ -22,7 +22,7 @@ const plugins = [
   ],
   [
     require.resolve('@babel/plugin-proposal-decorators'),
-     { "legacy": true }
+    { 'legacy': true }
   ],
   [
     require.resolve('@babel/plugin-syntax-dynamic-import')
