@@ -7,23 +7,28 @@ import { Text, View } from '@react-pdf/renderer'
 
 // this component important to generation of PDF
 
-const List = ({ children }) => children
+// const List = ({ children }) => children
 
-export const Item = ({ data, styles }) => (
+// export const Item = ({ data, styles }) => (
+//   <View>
+//     <View style={styles.knob} />
+//     <View style={styles.item}>
+//       <Text style={styles.itemContent}>{data}</Text>
+//     </View>
+//   </View>
+// )
+const Item = ({ data }) => (
   <View>
-    <View style={[styles.knob]} />
-    <View style={styles.item}>
-      <Text style={styles.itemContent}>{data}</Text>
-    </View>
+    <Text>{data}</Text>
   </View>
 )
 
-List.propTypes = {
-  children: PropTypes.node
-}
+// List.propTypes = {
+//   children: PropTypes.node
+// }
 
 Item.propTypes = {
-  data: PropTypes.node
+  data: PropTypes.arrayOf(PropTypes.string)
 }
 
-export default List
+export default Item
