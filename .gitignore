@@ -62,4 +62,4 @@ typings/
 .next
 
 # Release
-dist/*
+dist
