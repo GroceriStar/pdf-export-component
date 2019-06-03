@@ -5,7 +5,7 @@ import {
 
 import { Button } from 'antd'
 
-import { DocumentLayouts } from '/index'
+import { DocumentLayouts } from './../DocumentLayouts'
 
 // @TODO rename this component name.
 // because it's quite similar to component from @react-pdf - see above

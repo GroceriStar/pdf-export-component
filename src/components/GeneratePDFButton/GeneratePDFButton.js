@@ -4,7 +4,7 @@ import React, { Fragment } from 'react'
 import { Button } from 'antd'
 
 // @TODO check if this version works - import { DownloadPDFLink } from '~/index'
-import { DownloadPDFLink } from '/index'
+import { DownloadPDFLink } from '~/DownloadLink/DownloadPDFLink'
 
 class GeneratePDFButton extends React.Component {
   constructor (props) {

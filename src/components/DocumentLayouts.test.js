@@ -22,10 +22,7 @@ configure({ adapter: new EnzymeAdapter() })
 describe('Test RenderList attribute', () => {
   // const data = getFullGrocery('19 Gluten-Free Foods Shopping List')
   // const recipeData = getRecipes()[0]
-  const data = {
-    'John Doe': 'John Doe',
-    'Recipe': 'Recipe'
-  }
+  const data = ['John Doe', 'John Doe', 'Recipe', 'Recipe']
 
   // @TODO replace a similar tests with a function
 
@@ -34,32 +31,10 @@ describe('Test RenderList attribute', () => {
   // console.log(wrapper.prop('data'))
   // expect(wrapper.prop('data')).isEmpty(false)
 
-  it('Renderlist1 has data attribute', () => {
-    // (typeof A === "object") && (A !== null)
+  it('LayoutItem has data attribute', () => {
     const wrapper = mount(<Item data={data} />)
-    // const prop = wrapper.props().data;
-    // console.log(prop);
-    expect(wrapper.prop('data').isEmpty()).to.equal(false)
-    // expect(wrapper.props().data).toEqual(expect.any(Object))
+    expect(wrapper.prop('data')).toEqual(expect.anything())
   })
-
-  // it('Renderlist2 has data attribute', () => {
-  //   const renderList = shallow(<RenderList2 data={data} />);
-  //   const data = renderList.node.props.data;
-  //   // expect(data).toBe('data')
-  // })
-
-  // it('Renderlist3 has data attribute', () => {
-  //   const renderList = shallow(<RenderList3 data={data} />);
-  //   const data = renderList.node.props.data;
-  //   // expect(data).toBe('data')
-  // })
-
-  // it('Renderlist4 has data attribute', () => {
-  //   const renderList = shallow(<RenderList4 data={recipeData} />);
-  //   const data = renderList.node.props.data;
-  //   // expect(data).toBe('data')
-  // })
 
   // it('Render List1 should have Lists1 inside of it', () => {
   //   const wrapper = shallow(<RenderList1 data={data} />);
