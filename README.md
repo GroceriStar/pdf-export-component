@@ -4,6 +4,10 @@
 
 [![Build Status](https://travis-ci.org/GroceriStar/pdf-export-component.svg?branch=master)](https://travis-ci.org/GroceriStar/pdf-export-component) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/6e6c0af8f3d431a78ec0/maintainability)](https://codeclimate.com/github/GroceriStar/pdf-export-component/maintainability)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/6e6c0af8f3d431a78ec0/test_coverage)](https://codeclimate.com/github/GroceriStar/pdf-export-component/test_coverage)
+
 Table of Contents
 =================
 
