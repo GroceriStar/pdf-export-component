@@ -1,7 +1,7 @@
 import GeneratePDFButton from '~/GeneratePDFButton/GeneratePDFButton'
 
 // Should it be disabled completely? We usually use GeneratePDFButton...
-// import DownloadPDFLink   from '~/DownloadPDFLink/DownloadPDFLink';
+// import DownloadPDFLink from '~/DownloadLink/DownloadPDFLink'
 
 import DocumentLayouts from '~/DocumentLayouts'
 
@@ -12,5 +12,6 @@ import DocumentLayouts from '~/DocumentLayouts'
 export {
   GeneratePDFButton,
   DocumentLayouts
+  // DownloadPDFLink
   // extras
 }
