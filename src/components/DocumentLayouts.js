@@ -8,13 +8,13 @@ import {
 import MainLayout from './Layouts/MainLayout'
 import styles from './styles'
 
-const DocumentLayouts = (type, documentTitle, data) => {
+const DocumentLayouts = (type, name, data) => {
   return (
     <Document>
       <Page size='A4' style={styles.page} wrap>
         <View style={styles.section}>
           <Text style={styles.text}>
-            {documentTitle}
+            {name}
           </Text>
           {MainLayout(type, data)}
         </View>
