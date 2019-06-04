@@ -5,8 +5,11 @@ import {
   View,
   Document
 } from '@react-pdf/renderer'
+
 import MainLayout from './Layouts/MainLayout'
+
 import styles from './styles'
+
 
 const DocumentLayouts = (type, name, data) => {
   return (

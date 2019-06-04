@@ -7,6 +7,10 @@ import {
 } from '@react-pdf/renderer'
 // import List, { Item } from './List';
 
+//@TODO so we have 3 cases together, but this case is very very different?
+// I don't think so
+
+//@TODO change name
 const StandaloneRecipeView = ({ data }) => {
   return (
     <View>

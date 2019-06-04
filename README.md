@@ -66,3 +66,5 @@ To Find out about all the functionality use https://groceristar.github.io/grocer
 #### Contributors
 
 @vadim9999, @atherdon, @hirdbluebird
+
+@TODO review latest changes, that was made in @react-pdf and maybe update/improve our code base

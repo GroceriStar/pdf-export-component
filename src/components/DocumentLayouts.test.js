@@ -1,5 +1,4 @@
 /* globals describe, it, expect */
-
 import React from 'react'
 // import ReactDOM from 'react-dom'
 import {
@@ -7,6 +6,7 @@ import {
   // shallow,
   mount
 } from 'enzyme'
+
 import EnzymeAdapter from 'enzyme-adapter-react-16'
 
 import Item from './Layouts/LayoutItem/LayoutItem'
@@ -19,6 +19,7 @@ configure({ adapter: new EnzymeAdapter() })
 
 // @TODO move data to before section
 
+// @TODO tests should work
 describe('Test RenderList attribute', () => {
   // const data = getFullGrocery('19 Gluten-Free Foods Shopping List')
   // const recipeData = getRecipes()[0]
