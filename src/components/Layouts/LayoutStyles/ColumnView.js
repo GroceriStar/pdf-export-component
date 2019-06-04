@@ -1,5 +1,5 @@
 import { StyleSheet } from '@react-pdf/renderer'
-
+//@TODO someone want to replace it with smacss
 const documentStyles = StyleSheet.create({
   title: {
     fontSize: 16,
