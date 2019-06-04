@@ -23,6 +23,7 @@ const external = [
   'react',
   'react-dom'
 ]
+
 const globals = {
   'react': 'React',
   'react-dom': 'ReactDom',

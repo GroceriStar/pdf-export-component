@@ -1,5 +1,5 @@
 <p align="center"><img src="https://avatars2.githubusercontent.com/u/36658223?s=200&v=4" alt=""/></p>
-<h3 align="center">PDF Export<h3>
+<h3 align="center">PDF Export Component Wrapper - @react-pdf<h3>
 <p align="center">This is a module for using API like wrappers for getting food data for use in many projects. Just Like an database and fetch API in JS</p>
 
 [![Build Status](https://travis-ci.org/GroceriStar/pdf-export-component.svg?branch=master)](https://travis-ci.org/GroceriStar/pdf-export-component) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
@@ -30,6 +30,7 @@ Several quick start options are available:
 ## What's included
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
 
+//@TODO update readme
 ```
 .
 ├── docs

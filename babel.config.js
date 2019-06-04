@@ -7,6 +7,8 @@ const presets = [
   '@babel/preset-react'
 ]
 
+//@TODO I add here everything, but i'm not sure if we need all of that plugins.
+//I tried to fix rollup error
 const plugins = [
   [
     require.resolve('@babel/plugin-proposal-class-properties')
