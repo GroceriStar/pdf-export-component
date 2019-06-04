@@ -11,6 +11,8 @@
 // Setup enzyme's react adapter
 // configure({ adapter: new EnzymeAdapter() })
 
+//@TODO tests should work. not like right now
+
 describe('<TodaysDate /> component shallow only methods ', () => {
   it('renders without crashing', () => {
     const x = true

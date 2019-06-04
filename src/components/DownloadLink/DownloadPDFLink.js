@@ -16,6 +16,15 @@ import { DocumentLayouts } from './../DocumentLayouts'
 // @TODO right now color of text Download now is blue on blue background
 // we also didn't see a text - loading now.....
 
+// @TODO should be have so long component name here?
+
+
+// @TODO this structure works like shit. it's not a good animations there.
+// i think we can use ant-d animations
+// {({ blob, url, loading, error }) => (
+//   loading ? 'Loading document...' : 'Download now!'
+// )}
+
 class DownloadPDFLink extends Component {
   render () {
     const { type, name, data } = this.props

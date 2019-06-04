@@ -6,6 +6,9 @@ import { Button } from 'antd'
 // @TODO check if this version works - import { DownloadPDFLink } from '~/index'
 import { DownloadPDFLink } from '~/DownloadLink/DownloadPDFLink'
 
+//@TODO tests should be. not like right now
+
+//@TODO i don't like this.state.isHidden logic. can be done in more elegant way
 class GeneratePDFButton extends React.Component {
   constructor (props) {
     super(props)

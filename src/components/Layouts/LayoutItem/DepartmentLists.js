@@ -5,6 +5,7 @@ import uuidv1 from 'uuid/v1'
 import { Text, View } from '@react-pdf/renderer'
 import List, { Item } from './LayoutItem/LayoutItem'
 
+//@TODO tests
 const DepartmentLists = ({ department, ingredients, styles }) => (
   <View style={styles.main}>
     <Text style={styles.title}>
