@@ -8,6 +8,9 @@
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/6e6c0af8f3d431a78ec0/test_coverage)](https://codeclimate.com/github/GroceriStar/pdf-export-component/test_coverage)
 
+[![npm version](http://img.shields.io/npm/v/@groceristar/pdf-export.svg?style=flat)](https://npmjs.org/package/@groceristar/pdf-export "View this project on npm")
+
+
 Table of Contents
 =================
 
