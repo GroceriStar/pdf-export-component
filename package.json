@@ -1,6 +1,6 @@
 {
   "name": "@groceristar/pdf-export",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "module to use pdf-export feature between projects",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
