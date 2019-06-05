@@ -1,6 +1,6 @@
 import { StyleSheet } from '@react-pdf/renderer'
 
-//@TODO someone want to replace it with smacss
+// @TODO someone want to replace it with smacss
 const listStyles = StyleSheet.create({
   item: {
     flexDirection: 'row',

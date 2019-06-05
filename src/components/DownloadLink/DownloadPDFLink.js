@@ -18,7 +18,6 @@ import { DocumentLayouts } from './../DocumentLayouts'
 
 // @TODO should be have so long component name here?
 
-
 // @TODO this structure works like shit. it's not a good animations there.
 // i think we can use ant-d animations
 // {({ blob, url, loading, error }) => (
@@ -33,16 +32,17 @@ class DownloadPDFLink extends Component {
       <Button
         type='primary'
         icon='download'
-        size='large'>
+        size='large'
+      >
 
         <PDFDownloadLink
           document={DocumentLayouts(type, name, data)}
-          fileName={name + '.pdf'}>
+          fileName={name + '.pdf'}
+        >
           {({ blob, url, loading, error }) => (
             loading ? 'Loading document...' : 'Download now!'
           )}
         </PDFDownloadLink>
-
       </Button>
     )
   }

@@ -13,9 +13,9 @@ import RowViewStyles from './LayoutStyles/RowView'
 // and this will be hardly to catch later
 // it was a RenderList1 before
 
-//@TODO this case didn't cover recipes totally.
+// @TODO this case didn't cover recipes totally.
 
-//@TODO tests
+// @TODO tests
 
 const MainLayout = ({ type, data }) => {
   let styles
