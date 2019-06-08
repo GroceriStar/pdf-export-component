@@ -1,5 +1,5 @@
 import { StyleSheet } from '@react-pdf/renderer'
-//@TODO styles for what?
+// @TODO styles for what?
 const styles = StyleSheet.create({
   page: {
     flexDirection: 'row',
