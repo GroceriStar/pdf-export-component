@@ -6,10 +6,12 @@ import {
   Document
 } from '@react-pdf/renderer'
 
+// @TODO I don't like the name MainLayout. should be more explanatory
 import MainLayout from './Layouts/MainLayout'
 
 import styles from './styles'
 
+// @TODO I don't like name DocumentLayouts. Looks like this layout is main and it's like a wrapper for inner data
 const DocumentLayouts = (type, name, data) => {
   return (
     <Document>
