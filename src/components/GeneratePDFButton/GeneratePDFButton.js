@@ -11,7 +11,8 @@ import { DownloadPDFLink } from '~/DownloadLink/DownloadPDFLink'
 // @TODO i don't like this.state.isHidden logic. can be done in more elegant way
 
 // @TODO I want to have a cool animation. So when we click on button Generate PDF File - can we also be able to change the button title?
-// 
+// it maybe shows loading... because it take few seconds to generate it and then we'll replace with another button.
+// or maybe we should have only one button that change it logic after click...
 class GeneratePDFButton extends React.Component {
   constructor (props) {
     super(props)
