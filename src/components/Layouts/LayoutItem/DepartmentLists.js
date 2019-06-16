@@ -7,6 +7,9 @@ import { Text, View } from '@react-pdf/renderer'
 import List, { Item } from './LayoutItem/LayoutItem'
 
 // @TODO tests
+
+// @TODO add an ability to run this method for complex structures where we have an array with departments and ingredients.
+// @TODO give us ability to use uuid or ingredient.id as key for this sub-list
 const DepartmentLists = ({ department, ingredients, styles }) => (
   <View style={styles.main}>
     <Text style={styles.title}>{department}</Text><List>
