@@ -9,6 +9,9 @@ import { DownloadPDFLink } from '~/DownloadLink/DownloadPDFLink'
 // @TODO tests should be. not like right now
 
 // @TODO i don't like this.state.isHidden logic. can be done in more elegant way
+
+// @TODO I want to have a cool animation. So when we click on button Generate PDF File - can we also be able to change the button title?
+// 
 class GeneratePDFButton extends React.Component {
   constructor (props) {
     super(props)
@@ -22,7 +25,7 @@ class GeneratePDFButton extends React.Component {
       isHidden: !this.state.isHidden
     })
   }
-
+  // @TODO {this.toggleHidden.bind(this)} should be moved out from render method
   render () {
     const { type, name, data } = this.props
     return (
