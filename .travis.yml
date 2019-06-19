@@ -3,10 +3,12 @@ language: node_js
 node_js:
   - "lts/*"
   - "node"
-  - 6
+  - 10
 
 script:
+  - npm run test:cover
   - npm run build
+  
 
 sudo: false
 
