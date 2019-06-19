@@ -26,7 +26,7 @@
     "postversion": "git push --tags origin HEAD",
     "clean": "shx rm -rf ./coverage && shx rm -rf ./dist",
     "prepublish": "yarn clean && yarn build",
-    "test": "jest",
+    "test": "CI=true && jest",
     "test:watch": "jest --watch",
     "test:cover": "jest --coverage",
     "code-fix": "standard --fix"
