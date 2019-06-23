@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import uuidv1 from 'uuid/v1'
 
 import { View } from '@react-pdf/renderer'
-import DepartmentLists from 'LayoutItem/DepartmentLists'
+import DepartmentLists from './LayoutItem/DepartmentLists'
 
 import BulletListStyles from './LayoutStyles/BulletList'
 import ColumnViewStyles from './LayoutStyles/ColumnView'
