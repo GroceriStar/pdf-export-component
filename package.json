@@ -20,57 +20,15 @@
     "browse": "browser-sync start --s --ss build --index html/index-dev.html --files html/**/*.html,build/**/*.js --no-notify",
     "start": "npm-run-all --parallel build:dev browse",
     "std": "standard --verbose | snazzy",
-    "test": "npm run build:dev",
+    "test": "CI=true && jest",
     "preversion": "git pull && npm up && npm run std --silent",
     "version": "npm run build && git add -A .",
     "postversion": "git push --tags origin HEAD",
     "clean": "shx rm -rf ./coverage && shx rm -rf ./dist",
     "prepublish": "yarn clean && yarn build",
-    "test": "CI=true && jest",
     "test:watch": "jest --watch",
     "test:cover": "jest --coverage",
     "code-fix": "standard --fix"
-  },
-  "devDependencies": {
-    "@babel/cli": "7.4.4",
-    "@babel/core": "7.4.5",
-    "@babel/plugin-proposal-class-properties": "7.4.4",
-    "@babel/plugin-proposal-decorators": "7.4.4",
-    "@babel/plugin-syntax-dynamic-import": "7.2.0",
-    "@babel/plugin-transform-react-jsx": "7.3.0",
-    "@babel/plugin-transform-react-jsx-compat": "7.2.0",
-    "@babel/plugin-transform-react-jsx-self": "7.2.0",
-    "@babel/preset-env": "7.4.5",
-    "@babel/preset-react": "7.0.0",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "24.8.0",
-    "babel-plugin-module-resolver": "3.2.0",
-    "coveralls": "3.0.4",
-    "enzyme": "3.10.0",
-    "enzyme-adapter-react-16": "1.14.0",
-    "jest": "24.8.0",
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
-    "regenerator-runtime": "0.13.2",
-    "rollup": "1.14.2",
-    "rollup-plugin-babel": "4.3.2",
-    "rollup-plugin-commonjs": "10.0.0",
-    "rollup-plugin-node-resolve": "5.0.1",
-    "rollup-plugin-replace": "2.2.0",
-    "shx": "0.3.2",
-    "standard": "12.0.1"
-  },
-  "peerDependencies": {
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "dependencies": {
-    "@react-pdf/renderer": "^1.5.1",
-    "antd": "^3.16.1",
-    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "babel-core": "6.26.0",
@@ -97,6 +55,18 @@
     "enzyme": "3.10.0",
     "enzyme-adapter-react-16": "1.14.0",
     "jest": "24.8.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@react-pdf/renderer": "^1.5.1",
+    "antd": "^3.16.1",
+    "uuid": "^3.3.2"
   },
   "standard": {
     "ignore": [
