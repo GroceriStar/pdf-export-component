@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import uuidv1 from 'uuid/v1'
 
 import { View } from '@react-pdf/renderer'
-import DepartmentLists from 'LayoutItem/DepartmentLists'
+import DepartmentLists from './LayoutItem/DepartmentLists'
 
 import BulletListStyles from './LayoutStyles/BulletList'
 import ColumnViewStyles from './LayoutStyles/ColumnView'
@@ -42,7 +42,7 @@ const MainLayout = ({ type, data }) => {
   // because with this way it wouldn't work on complex cases
 
   // @TODO we should have a flag that will give us 2 options - generate an id by uuid or use for example item.id for it.
-  
+
   return (
     <View>
       {data && data.map(item => (
