@@ -20,6 +20,7 @@
     "browse": "browser-sync start --s --ss build --index html/index-dev.html --files html/**/*.html,build/**/*.js --no-notify",
     "start": "npm-run-all --parallel build:dev browse",
     "std": "standard --verbose | snazzy",
+    "test:build-dev": "npm run build:dev",
     "test": "CI=true && jest",
     "preversion": "git pull && npm up && npm run std --silent",
     "version": "npm run build && git add -A .",
