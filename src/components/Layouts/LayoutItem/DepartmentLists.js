@@ -4,7 +4,7 @@ import React from 'react'
 import uuidv1 from 'uuid/v1'
 
 import { Text, View } from '@react-pdf/renderer'
-import List, { Item } from './LayoutItem/LayoutItem'
+import List, { Item } from './LayoutItem'
 
 // @TODO tests
 
