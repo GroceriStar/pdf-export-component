@@ -42,7 +42,7 @@ const MainLayout = ({ type, data }) => {
   // because with this way it wouldn't work on complex cases
 
   // @TODO we should have a flag that will give us 2 options - generate an id by uuid or use for example item.id for it.
-  
+
   return (
     <View>
       {data && data.map(item => (
