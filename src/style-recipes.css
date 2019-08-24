@@ -1,0 +1,59 @@
+.mainBlock{
+    border:2px solid red;
+    display:flex;
+    justify-content: space-around;
+    height:1000px;
+    width:900px;
+}
+
+.column-one{
+    border: 2px solid green;
+}
+
+.column-two{
+    border: 2px solid purple;
+}
+.column-three{
+    border:2px solid black
+}
+.mainContainer{
+    border: 2px solid yellow;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+    /* width:900px; */
+}
+
+.column-one, .column-two, .column-three{
+    flex:1;
+}
+
+.grocery-name{
+    border: 2px solid blue;
+}
+
+.department-block{
+    border: 2px solid gold;
+    display:flex;
+    flex-direction:column;
+    align-items: stretch;
+}
+
+.department-name{
+    border: 2px solid blue;
+
+}
+
+.ingredient-block{
+    border: 2px solid purple;
+   
+
+    display:flex;
+    align-content: center
+}
+
+.checkbox{
+    border:2px solid gray;
+    width:12px;
+}
