@@ -81,7 +81,7 @@
     "babel-preset-es2015": "^6.24.1",
     "eslint": "^6.0.0",
     "uuid": "^3.3.2",
-    "snyk": "^1.230.5"
+    "snyk": "^1.258.2"
   },
   "standard": {
     "ignore": [
