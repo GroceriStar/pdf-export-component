@@ -80,6 +80,8 @@ patch:
         patched: '2019-06-24T09:15:49.614Z'
     - '@babel/cli > chokidar > anymatch > micromatch > extglob > expand-brackets > snapdragon > debug':
         patched: '2019-06-24T09:15:49.614Z'
+    - snyk > proxy-agent > pac-proxy-agent > get-uri > debug:
+        patched: '2019-12-13T22:41:28.726Z'
   SNYK-JS-LODASH-450202:
     - eslint > inquirer > lodash:
         patched: '2019-07-04T03:42:00.706Z'
