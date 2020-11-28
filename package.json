@@ -63,7 +63,7 @@
     "rollup-plugin-replace": "2.2.0",
     "rollup-plugin-uglify": "6.0.4",
     "rollup-watch": "4.3.1",
-    "shx": "0.3.2",
+    "shx": "0.3.3",
     "snazzy": "8.0.0",
     "standard": "14.3.1"
   },
