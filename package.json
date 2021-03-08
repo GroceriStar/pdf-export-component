@@ -79,7 +79,7 @@
     "@react-pdf/renderer": "^1.5.1",
     "antd": "^4.0.0",
     "babel-preset-es2015": "^6.24.1",
-    "eslint": "^6.0.0",
+    "eslint": "^6.1.0",
     "uuid": "^7.0.0",
     "snyk": "^1.260.0"
   },
