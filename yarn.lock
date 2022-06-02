@@ -9125,22 +9125,22 @@ shell-quote@^1.6.1:
     array-reduce "~0.0.0"
     jsonify "~0.0.0"
 
-shelljs@^0.8.4:
-  version "0.8.4"
-  resolved "https://registry.npmjs.org/shelljs/-/shelljs-0.8.4.tgz"
-  integrity sha512-7gk3UZ9kOfPLIAbslLzyWeGiEqx9e3rxwZM0KE6EL8GlGwjym9Mrlx5/p33bWTu9YG6vcS4MBxYZDHYr5lr8BQ==
+shelljs@^0.8.5:
+  version "0.8.5"
+  resolved "https://registry.npmjs.org/shelljs/-/shelljs-0.8.5.tgz"
+  integrity sha512-TiwcRcrkhHvbrZbnRcFYMLl30Dfov3HKqzp5tO5b4pt6G/SezKcYhmDg15zXVBswHmctSAQKznqNW2LO5tTDow==
   dependencies:
     glob "^7.0.0"
     interpret "^1.0.0"
     rechoir "^0.6.2"
 
-shx@0.3.3:
-  version "0.3.3"
-  resolved "https://registry.npmjs.org/shx/-/shx-0.3.3.tgz"
-  integrity sha512-nZJ3HFWVoTSyyB+evEKjJ1STiixGztlqwKLTUNV5KqMWtGey9fTd4KU1gdZ1X9BV6215pswQ/Jew9NsuS/fNDA==
+shx@0.3.4:
+  version "0.3.4"
+  resolved "https://registry.npmjs.org/shx/-/shx-0.3.4.tgz"
+  integrity sha512-N6A9MLVqjxZYcVn8hLmtneQWIJtp8IKzMP4eMnx+nqkvXoqinUPCbUFLp2UcWTEIUONhlk0ewxr/jaVGlc+J+g==
   dependencies:
     minimist "^1.2.3"
-    shelljs "^0.8.4"
+    shelljs "^0.8.5"
 
 side-channel@^1.0.4:
   version "1.0.4"
